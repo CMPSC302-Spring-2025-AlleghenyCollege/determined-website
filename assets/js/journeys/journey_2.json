@@ -1,400 +1,516 @@
 {
   "metadata": {
-    "title": "Journey 2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "image": "../assets/images/bg-gradient-2.jpg"
+    "title": "Around Every Corner",
+    "description": "You’re 24 years old, and you’ve been a daily drug user for years. You come from a lower-income single-parent home, and you’ve done what you can to keep things stable. You’re going to try to quit using all drugs and alcohol.",
+    "image": "../assets/images/bg-gradient-3.jpg"
   },
   "initial_values": {
-    "resist": 50,
-    "use": 50,
-    "unlocked_tools": ["deep_breathing"]
+    "resist": 20,
+    "use": 80
   },
   "scene_001": {
-    "title": "Afternoon",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-    "toolkit": ["deep_breathing"],
+    "title": "Idle Hands",
+    "narration": "You chose a day you have off from work to quit, but now you’re faced with the worst enemy of someone trying to quit: free time. What do you do?",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_002a",
-        "resource_link": {
-          "url": "http://127.0.0.1:5501/pages/game.html",
-          "text": "Lorem Ipsum Resource",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        "unlock_tool": "journal"
-      },
-      {
-        "label": "Neutral Option",
+        "label": "Get some food from your favorite restaurant.",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_002b"
+        "next_scene_id": "scene_010a"
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_002c"
-      }
-    ]
-  },
-  "scene_002a": {
-    "title": "Lunch",
-    "narration": "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "toolkit": ["deep_breathing", "journal"],
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_003a",
-        "unlock_tool": "meditation"
-      },
-      {
-        "label": "Neutral Option",
+        "label": "Call some friends. They’ve always been there for you in the past.",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_003b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_003c"
+        "next_scene_id": "scene_001a"
       }
     ]
   },
-  "scene_002b": {
-    "title": "Midday",
-    "narration": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.",
-    "toolkit": ["deep_breathing"],
+  "scene_001a": {
+    "title": "A Ring for a Proposa",
+    "narration": "Your friend, Austin, answers in a hurried voice and says, “I was just thinking about calling you. I know you’re busy, but I really need you to get over here asap to talk about something. I also have the $50 you loaned me earlier this month.”",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
+        "label": "“Yeah man, no problem, I’ll be right over.”",
+        "resist_change": 0,
+        "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_003d",
-        "unlock_tool": "grounding"
+        "next_scene_id": "scene_001g"
       },
       {
-        "label": "Neutral Option",
+        "label": "“Just hold onto the money for me, I can’t make it over today. I’m about to run to grab a quick bite to eat, and then my schedule is packed for the rest of the day.”",
+        "resist_change": 5,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_001b"
+      }
+    ]
+  },
+  "scene_001g": {
+    "title": "Friends",
+    "narration": "You arrive at your friend Austin's house, and as you approach the front door. You’re met with the smell of cigarettes and the sound of intoxicated laughter. You walk in and don’t see Austin anywhere. You sit at the table when the neighbor, Chris, asks you if you want to pitch in on a bulk order of powder. What do you do?",
+    "choices": [
+      {
+        "label": "Tell him that you really don’t have the money right now.",
+        "resist_change": 10,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_001d"
+      },
+      {
+        "label": "Tell him that you quit and are trying to get sober",
+        "resist_change": 20,
+        "use_change": 5,
+        "time_advance": 2,
+        "next_scene_id": "scene_001e"
+      },
+      {
+        "label": "Fake a phone call to leave",
+        "resist_change": 5,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_001f"
+      }
+    ]
+  },
+  "scene_001d": {
+    "title": "You can try again tomorrow",
+    "narration": "Chris smiles and says, “Hey, don’t worry about it, you’ve hooked me up enough times that I can front you some, just get me back when you can.” He puts a knife into a small bag and presents the tip to you with a generous amount, and you think to yourself, It’s not the end of the world, there's always tomorrow.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_001e": {
+    "title": "The Environment Around You",
+    "narration": "Chris nods an accepts that you're getting sober. You check the time, you've been waiting for Austin for 30 minutes already. You tell Chris nevermind and take some.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_001f": {
+    "title": "What About my Call History",
+    "narration": "You fake a phone call, look at your friend, and tell him something important has come up and you have to go. They understand, and you rush out to your vehicle. On your way outside, Austin sees you in the driveway and stops you. “What's up man? I’ve got your money. Sorry it took so long to get back to you. Yeah, that thing I needed to talk to you about is all good now. The neighbor, Paul, has a script coming in next Thursday and was going to pay in pills for a ride to pick them up, but Chris is going to take him, so no biggie.” You take the money and start walking to your car.",
+    "choices": [
+      {
+        "label": "Go get food",
+        "resist_change": 5,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_001b"
+      },
+      {
+        "label": "Think to yourself “I can't believe I faked a phone call to flake on my friends” and go back inside.",
+        "resist_change": 0,
+        "use_change": 10,
+        "time_advance": 6,
+        "next_scene_id": "scene_007"
+      }
+    ]
+  },
+  "scene_007": {
+    "title": "Hello My Old Friend",
+    "narration": "You walk back into the house and apologize, though your apology goes largely unnoticed. You walk to the kitchen to pour yourself a glass of water when Chris walks by and hands you your favorite without saying anything at all.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_001b": {
+    "title": "Paved with Good Intentions",
+    "narration": "You walk into your favorite restaurant, and you're startled by someone tapping your shoulder from behind. You look back, and it’s your old friend, Josh. You haven’t seen him in a while, and after a brief conversation, you notice he looks stressed out, so you ask him what's wrong. He promptly replies, “ Honestly, I’m in a bad situation. Can you please give me a ride? I really need some help, and I’ll give you gas money. I’m desperate, and I wouldn’t ask if it wasn’t life or death. Please do this for me.”",
+    "choices": [
+      {
+        "label": "“Where do you need to go?”",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_003e"
+        "next_scene_id": "scene_007c"
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_003f"
-      }
-    ]
-  },
-  "scene_002c": {
-    "title": "Afternoon Struggle",
-    "narration": "Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
-    "toolkit": false,
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_003g"
-      },
-      {
-        "label": "Neutral Option",
+        "label": "“Grab your stuff and let’s go.”",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_003h"
+        "next_scene_id": "scene_011"
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
+        "label": "“I can't, I'm so sorry.”",
+        "resist_change": 10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_003i"
+        "next_scene_id": "scene_012"
       }
     ]
   },
-  "scene_003a": {
-    "title": "Afternoon Activity",
-    "narration": "Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "toolkit": ["deep_breathing", "journal", "meditation"],
+  "scene_007c": {
+    "title": "That's Reassuring",
+    "narration": "“I need to go to the airport. My flight leaves in an hour, and my other ride told me to wait here and never showed up. I’m leaving this all behind me and getting out of here, but I only have this one chance to go. Not to mention I got into some debt here that I can’t pay off and… I need to get on that plane. Will you help me or not? When you needed help, I had your back. That favor is huge compared to this, and you have to do a lot less than I did.”",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
+        "label": "“Alright, let's go.”",
+        "resist_change": 0,
+        "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_004a"
+        "next_scene_id": "scene_011"
       },
       {
-        "label": "Neutral Option",
+        "label": "“I really wish I could help you right now, but I can’t.”",
+        "resist_change": 5,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_012"
+      }
+    ]
+  },
+  "scene_011": {
+    "title": "Big Mistake, Small Package",
+    "narration": "On the drive, he tells you that there are these government-funded rehab programs that will give you an all-expenses-paid vacation out of the state. “I just contacted a guy on Instagram, he checked my insurance, and then hooked me up with a rehab program. You remember Carly? Well, she told me about it years ago, and she was telling me that when you finish, different brokers will pay you in cash to relapse to get back into another program. I guess the brokers get paid for however many people they sign up. I know the whole thing seems messed up, but it’s no worse than things are here. Plus, it’s a free ticket out of town.” You pull up to the airport, and he hands you a bag as payment. “Obviously, I can’t take that on the plane. Thanks for the ride.” You look at the passenger seat and see a small bag of powder. It’s too late to give it back now. You begin to drive home when you see in your rearview mirror the flashing lights of a police cruiser. What now?",
+    "choices": [
+      {
+        "label": "(Swallow the Bag)",
+        "resist_change": -30,
+        "use_change": 15,
+        "time_advance": 1,
+        "next_scene_id": "scene_011a"
+      },
+      {
+        "label": "(Pull over and hope that you’re not searched.)",
+        "resist_change": 5,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_011b"
+      }
+    ]
+  },
+  "scene_011a": {
+    "title": "Desperate Times and Desperate Measures",
+    "narration": "The bag gets stuck in your throat, but you manage to force it down. You hope that the cellophane holds up. An officer approaches your vehicle and informs you that your license plate light is out, and asks for your license and registration. Upon retrieving it for the officer, he asks you if you’ve had anything to drink or taken any illicit substances. You deny it, but he points out that your pupils are dilated and asks you to step out of the car. You step out and are placed under arrest for driving under the influence. Your blood is taken at the hospital, and you test positive for a controlled substance. Perhaps if things were different, you wouldn’t have felt the need to swallow the bag just to avoid legal repercussions.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_011b": {
+    "title": "Does the 4th Amendment Apply Here?",
+    "narration": "You pull over and mentally prepare for the officer to approach the car. The bag is in your pocket, so as long as you remain calm, you should be fine. Unfortunately, the situation has increased your heart rate, and you’re sweating. The officer informs you that your license plate light is out and asks for your license and registration. You hand it over, and he asks, “Why are you so shaky?” You reply that you’re just nervous when you get pulled over. He contemplates your response and asks, “Why would you be nervous if you have nothing to hide?” “I’m just like that, I guess,” you reply. He’s clearly suspicious of you, but he nods and tells you to hang tight while he runs your information. What now?",
+    "choices": [
+      {
+        "label": "(Swallow the bag)",
+        "resist_change": -35,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_011a"
+      },
+      {
+        "label": "(Don’t make any sudden movements.)",
+        "resist_change": 5,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_011c"
+      }
+    ]
+  },
+  "scene_011c": {
+    "title": "Leave No Trace",
+    "narration": "The officer returns your license and registration. You thank him, and he tells you to “have a nice day, and get that bulb replaced.” You feel a rush of relief and roll up your window. You start driving and realize that you need to do something with this bag you’re holding.",
+    "choices": [
+      {
+        "label": "Throw it out the window and risk someone seeing you.",
+        "resist_change": 5,
+        "use_change": -5,
+        "time_advance": 1,
+      "next_scene_id": "scene_011e"
+      },
+      {
+        "label": "Wait till you get home to flush it",
+        "resist_change": -40,
+        "use_change": 15,
+        "time_advance": 1,
+        "next_scene_id": "scene_011d"
+      }
+    ]
+  },
+  "scene_011d": {
+    "title": "Home, Bitter-Sweet Home",
+    "narration": "You make it home without incident, but when you go to flush the bag, after all of the stress and misery today, you can’t help but have some. After your first dose, it feels like the whole journey has been leading up to this moment. The pain associated with it will come later; for now, you just try to enjoy yourself.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_011e": {
+    "title": "Litter Bug",
+    "narration": "You throw the bag out the window. You feel paranoid about the whole ordeal, so you head straight home. Once you arrive, you don’t feel as bad as you thought you would. You’re happy that you haven't given in, and despite the chaos of the day, you feel relieved. Despite this, now that you’re home, you keep feeling a craving to use. A coworker told you once that exercise helped them with the mental cravings when they quit using. Maybe you could try going for a walk to trick your brain into focusing on something else, or try practicing controlled breathing instead.",
+    "choices": [
+      {
+        "label": "Controlled Breathing",
+        "resist_change": 10,
+        "use_change": -10,
+        "time_advance":8760,
+        "next_scene_id": "scene_033"
+      },
+      {
+        "label": "Go for a Walk",
+        "resist_change": 10,
+        "use_change": -10,
+        "time_advance": 8760,
+        "next_scene_id": "scene_033"
+      }
+    ]
+  },
+  "scene_012": {
+    "title": "I'm Sure He'll be Fine",
+    "narration": "You tell him that you wish you could help, but you just can’t right now. He looks at you and says, “That’s wrong, that's just wrong. You act like you’re so superior, but you’re worse than everyone else. Here I am asking for a basic favor, and you won't do it? Why? Are you too busy getting a bite to eat? You’re a bastard.” He storms out the door, and you’ve lost your appetite. You walk out the door with a bad feeling and an intense craving. You look up and are confronted with a billboard depicting a pile of prescription bottles. Everything is a signal telling you to use. Your mind becomes hyper-focused on relieving the feeling, which is intensifying. A coworker told you once that exercise helped him with the mental cravings when he quit using drugs. Maybe you could try running right now to trick your brain into focusing on something else, or sit in your car and practice controlled breathing to distract yourself.",
+    "choices": [
+      {
+        "label": "Controlled Breathing",
+        "resist_change": 0,
+        "use_change": -5,
+        "time_advance": 168,
+        "next_scene_id": "scene_013"
+      },
+      {
+        "label": "Run, Get Out of There",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 168,
+        "next_scene_id": "scene_013"
+      }
+    ]
+  },
+  "scene_010a": {
+    "title": "Got your Money",
+    "narration": "On your drive to the restaurant, your phone rings; it’s your friend Austin. He says, “Hey, I know you’re busy, but I really need you to get over here asap to take a look at something. I also have the $50 you loaned me earlier this month.” You think to yourself, “I could use the money, and if I don’t pick it up now, I’ll probably never get it.”",
+    "choices": [
+      {
+        "label": "“Alright man, I’ll be right over.”",
+        "resist_change": 0,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_001g"
+      },
+      {
+        "label": "“I’m in the middle of a few things. I’ll talk to you later.”",
+        "resist_change": 5,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_001b"
+      }
+    ]
+  },
+  "scene_033": {
+    "title": "All Thanks to You",
+    "narration": "It’s been a year since that first day. You restructured your life around remaining sober. There was no magic means you used; it was a synthesis of many techniques. You began exercising regularly and made new friends in the process. You started focusing on your diet and on different ways to take control of the moment, like controlled breathing and meditation. You spent time giving back to your community through outreach programs for people in situations similar to the one you found yourself in last year. Avoiding triggers was critical. You had to avoid some of your closest friends, and they weren’t understanding. They said you “forgot where you came from” and a myriad of other insults. The price was high, and you still wonder if you’ll be able to keep it up indefinitely. You contemplated all of this while you walked through town. Suddenly, you were surprised to look up and see Josh having a smoke break outside of a construction site. He notices you and runs up. “Hey, good to see you! I’ve been meaning to get a hold of you since I got back into town, but things have been crazy. Those rehab programs are a scam. I ended up doing 12 steps of all things after getting tossed around from sober house to sober house. Believe it or not, the regular meetings have worked wonders for me, but everybody’s different. I came back to work with my step-dad, and things have been going well. I’m sorry for leaving you the way I did, but you honestly saved my life.”",
+    "choices": [
+      {
+        "label": "“I’m glad to hear you’re doing better.”",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 0,
+      "next_scene_id": "scene_win"
+      },
+      {
+        "label": "“Now that you’re doing better, can I get that gas money you promised me?”",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 0,
+      "next_scene_id": "scene_win"
+      }
+    ]
+  },
+  "scene_013": {
+    "title": "Are you Sure",
+    "narration": "A week has passed, and you’ve been taking it slow. Walking every day and focusing on your well-being. You just got off work and are driving home when you stop at the light. A man with a sign that reads “Unemployed and Hungry” is standing next to your vehicle. You’ve seen him before and know that he has a reputation for using the money he gets from panhandling to buy alcohol.",
+    "choices": [
+      {
+        "label": "Give him $5",
+        "resist_change": 0,
+        "use_change": -0,
+        "time_advance": 1,
+        "next_scene_id": "scene_013a"
+      },
+      {
+        "label": "Wait for the light to turn green",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_004b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004c"
+        "next_scene_id": "scene_013a"
       }
     ]
   },
-  "scene_003b": {
-    "title": "Afternoon Reflection",
-    "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.",
-    "toolkit": ["deep_breathing", "journal"],
+  "scene_013a": {
+    "title": "No Thanks to You",
+    "narration": "You hand him the money, and he asks, “Do you have a smoke?” You tell him that you quit and drive off. A moment later, your phone rings; it’s Austin. “Did you hear what happened?” “No,” you reply. “Josh was in a car accident, and he’s gone.” You say in a voice of disbelief, “I just saw him last week; he needed a ride. Whose car was he driving?” “his step-dads.” “Was he drunk or what?” “Nobody knows, it just happened last night. I’ll let you know if I find anything else out.” “Thanks, man.” You hang up the phone and immediately think to yourself that if you had just given him the ride, he’d still be alive. That thought keeps repeating every second of your drive. You look out the window and see a bar, and you think about calling Austin back and going over. You hardly think straight, let alone worry about your sobriety. If he’s gone just like that, does it even matter? You think about home, you still have pills stashed because you couldn’t bring yourself to get rid of them. What now?",
     "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
+     {
+        "label": "Go home",
+        "resist_change": 0,
+        "use_change": -0,
         "time_advance": 1,
-        "next_scene_id": "scene_004d",
-        "unlock_tool": "exercise"
+        "next_scene_id": "scene_relapse"
       },
       {
-        "label": "Neutral Option",
+        "label": "Go to Austin's",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_004e"
+        "next_scene_id": "scene_relapse"
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004f"
-      }
-    ]
-  },
-  "scene_003d": {
-    "title": "Afternoon Opportunity",
-    "narration": "Placeholder text for afternoon opportunity scene.",
-    "toolkit": ["deep_breathing", "grounding"],
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004d"
-      },
-      {
-        "label": "Neutral Option",
+        "label": "Go to the Bar",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_004e"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004f"
+        "next_scene_id": "scene_relapse"
       }
-    ]
-  },
-  "scene_003g": {
-    "title": "Finding Support",
-    "narration": "Placeholder text for finding support scene.",
-    "toolkit": false,
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004a",
-        "unlock_tool": {
-          "id": "call_sponsor",
-          "title": "Call Your Sponsor",
-          "description": "Reach out to your sponsor for immediate support and guidance.",
-          "default_resist_cost": 2,
-          "default_use_benefit": 20
-        }
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_004b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004c"
-      }
-    ]
-  },
-  "scene_004a": {
-    "title": "Afternoon Success",
-    "narration": "Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem.",
-    "toolkit": true,
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_005a"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_005b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_005c"
-      }
-    ]
-  },
-  "scene_004b": {
-    "title": "Afternoon Challenge",
-    "narration": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
-    "toolkit": [
-      {
-        "id": "call_sponsor",
-        "resist_cost": 1,
-        "use_benefit": 25
-      },
-      "deep_breathing"
     ],
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_005d",
-        "unlock_tool": "meeting"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_005e"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_005f"
-      }
-    ]
+    "end": "relapse"
   },
-  "scene_004d": {
-    "title": "Afternoon Breakthrough",
-    "narration": "Placeholder text for afternoon breakthrough scene.",
-    "toolkit": ["deep_breathing", "grounding", "exercise"],
+  "scene_005c": {
+    "title": "Important Decision",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A significant choice lies before you in your journey.",
     "choices": [
       {
         "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_005a"
+        "resist_change": 20,
+        "use_change": -20,
+        "time_advance": 24,
+        "next_scene_id": "scene_win"
       },
       {
         "label": "Neutral Option",
         "resist_change": 0,
         "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_005e"
+        "time_advance": 24,
+        "next_scene_id": "scene_006"
       },
       {
         "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
+        "resist_change": -20,
+        "use_change": 20,
+        "time_advance": 24,
         "next_scene_id": "scene_relapse"
       }
     ]
   },
-  "scene_005a": {
-    "title": "Afternoon Resolution",
-    "narration": "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
-    "toolkit": true,
-    "choices": [],
-    "end": "win"
-  },
-  "scene_005b": {
-    "title": "Afternoon Balance",
-    "narration": "Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.",
-    "toolkit": true,
-    "choices": [],
-    "end": "win"
-  },
-  "scene_005c": {
-    "title": "Afternoon Setback",
-    "narration": "Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.",
-    "toolkit": false,
-    "choices": [],
-    "end": "relapse"
-  },
   "scene_005d": {
-    "title": "Afternoon Progress",
-    "narration": "Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam.",
-    "toolkit": true,
-    "choices": [],
-    "end": "win"
+    "title": "Difficult Crossroads",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your recovery journey has arrived at a critical juncture.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 25,
+        "use_change": -25,
+        "time_advance": 24,
+        "next_scene_id": "scene_006"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 24,
+        "next_scene_id": "scene_007"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -30,
+        "use_change": 25,
+        "time_advance": 24,
+        "next_scene_id": "scene_relapse"
+      }
+    ]
   },
   "scene_005e": {
-    "title": "Afternoon Routine",
-    "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti.",
-    "toolkit": true,
+    "title": "Final Challenge",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. This moment will define your recovery journey.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 30,
+        "use_change": -30,
+        "time_advance": 24,
+        "next_scene_id": "scene_win"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": -10,
+        "use_change": 20,
+        "time_advance": 24,
+        "next_scene_id": "scene_007"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -40,
+        "use_change": 40,
+        "time_advance": 24,
+        "next_scene_id": "scene_relapse"
+      }
+    ]
+  },
+  "scene_005f": {
+    "title": "Moment of Truth",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everything in your recovery journey has led to this moment.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 50,
+        "use_change": -50,
+        "time_advance": 24,
+        "next_scene_id": "scene_win"
+      },
+      {
+        "label": "Neutral Option",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 24,
+        "next_scene_id": "scene_007"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -50,
+        "use_change": 50,
+        "time_advance": 24,
+        "next_scene_id": "scene_relapse"
+      }
+    ]
+  },
+  "scene_006": {
+    "title": "New Beginning",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You've overcome significant challenges and are entering a new phase.",
+    "choices": [
+      {
+        "label": "Continue Your Journey",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 0,
+        "next_scene_id": "scene_win"
+      }
+    ]
+  },
+  "BLANK": {
+    "title": "Final Decision",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. This decision will determine your path forward.",
+    "choices": [
+      {
+        "label": "Positive Option",
+        "resist_change": 50,
+        "use_change": -50,
+        "time_advance": 24,
+        "next_scene_id": "scene_win"
+      },
+      {
+        "label": "Negative Option",
+        "resist_change": -50,
+        "use_change": 50,
+        "time_advance": 24,
+        "next_scene_id": "scene_relapse"
+      }
+    ]
+  },
+  "scene_win": {
+    "title": "Recovery Success",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You've successfully navigated this challenging journey. By making a series of positive choices and building resilience, you've maintained your recovery path. This demonstrates how recovery is built through consistent effort and positive decision-making.",
     "choices": [],
     "end": "win"
   },
-  "scene_005f": {
-    "title": "Afternoon Difficulty",
-    "narration": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
-    "toolkit": false,
+  "scene_relapse": {
+    "title": "Recovery Setback",
+    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your resistance has been worn down through a series of challenging situations and choices. This mirrors how relapse typically happens - not from a single decision, but through a pattern that gradually erodes resilience. Remember that setbacks are part of many recovery journeys, and each attempt teaches valuable lessons.",
     "choices": [],
     "end": "relapse"
-  },
-  "scene_win": {
-    "title": "Afternoon Success",
-    "narration": "Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper.",
-    "toolkit": true,
-    "end": "win",
-    "choices": []
-  },
-  "scene_relapse": {
-    "title": "Afternoon Relapse",
-    "narration": "Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue.",
-    "toolkit": false,
-    "end": "relapse",
-    "choices": []
   }
-} 
+}

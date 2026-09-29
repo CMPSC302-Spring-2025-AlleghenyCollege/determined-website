@@ -1,134 +1,753 @@
 {
   "metadata": {
-    "title": "Test Journey",
-    "description": "A simple journey to test that the game mechanics are working correctly. Navigate through a morning routine and make choices that affect your recovery.",
-    "image": "../assets/images/bg-gradient-1.jpg"
+    "title": "Morning After",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "../assets/images/home-image.jpg"
   },
   "initial_values": {
-    "resist": 75,
-    "use": 30,
-    "unlocked_tools": ["meditation"]
+    "resist": 50,
+    "use": 50
   },
   "scene_001": {
-    "title": "Morning Wake-Up",
-    "narration": "You wake up on a Saturday morning feeling refreshed. The sun is streaming through your window, and you have the whole day ahead of you. You think about how to start your day in a way that supports your recovery.\n\nYour phone shows a few text messages from friends, and you notice your sponsor sent you a motivational quote. What's your first move?",
-    "toolkit": true,
+    "title": "January",
+    "narration": "The dorm heat hisses. You blink awake, the winter light harsh. The silence feels heavy after the break. Your heart tightens remembering Kensington. Your cousin's warnings, mother's guilt, the old friend's voice offering pills 'just for the holiday stress.' Classes start tomorrow, the pressure to 'do better this semester' thumps in your skull, words from your father.",
     "choices": [
       {
-        "label": "Start with a 10-minute meditation session",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 0.5,
-        "next_scene_id": "scene_002",
-        "unlock_tool": "breathing_exercise"
-      },
-      {
-        "label": "Check all your messages immediately",
-        "resist_change": -5,
-        "use_change": 5,
-        "time_advance": 0.5,
-        "next_scene_id": "scene_003"
-      },
-      {
-        "label": "Get up and make a healthy breakfast",
-        "resist_change": 5,
+        "label": "Get out of bed",
+        "resist_change": 3,
         "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_004"
-      }
-    ]
-  },
-  "scene_002": {
-    "title": "Peaceful Start",
-    "narration": "The meditation session helps center your mind. You feel calm and focused as you finish. Your breathing is steady, and you're reminded of your strength and commitment to recovery.\n\nNow you're ready to tackle the rest of your morning. What's next?",
-    "toolkit": true,
-    "choices": [
-      {
-        "label": "Call your sponsor to check in",
-        "resist_change": 15,
-        "use_change": -10,
-        "time_advance": 0.5,
-        "next_scene_id": "scene_win",
+        "time_advance": 72,
+        "next_scene_id": "scene_002a",
         "resource_link": {
-          "url": "https://www.samhsa.gov/find-help/national-helpline",
-          "text": "24/7 Support Helpline",
-          "description": "Free, confidential, 24/7 treatment referral and information service for individuals facing mental health and/or substance use disorders."
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Withdrawal Symptoms",
+          "description": "Irritability and fatigue are normal in early-year recovery."
         }
       },
       {
-        "label": "Go for a morning walk outside",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_win"
+        "label": "Scroll through Tumblr for an hour",
+        "resist_change": -2,
+        "use_change": 1,
+        "time_advance": 144,
+        "next_scene_id": "scene_002b",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Avoidance",
+          "description": "Avoidance can worsen cravings over time."
+        }
       }
     ]
   },
-  "scene_003": {
-    "title": "Digital Distraction",
-    "narration": "You spend time scrolling through messages and social media. Some of the content makes you feel anxious, and you see posts from old friends who are partying. You start to feel a bit disconnected from your recovery goals.\n\nYou realize you need to refocus. How do you get back on track?",
-    "toolkit": ["meditation"],
+  "scene_002a": {
+    "title": "Late January",
+    "narration": "You rush between lectures, your chest tightening. You scribble notes, but your focus drifts. After class, your Bio lab partner, Chloe, asks, 'You okay? You look wiped.' You hate how easily people notice. You can feel your hairline start to collect moisture, and you instinctively begin cracking your knuckles.",
     "choices": [
       {
-        "label": "Put the phone away and do some stretching",
+        "label": "Tell Chloe you're just tired",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_003a"
+      },
+      {
+        "label": "Lie and say you're sick",
+        "resist_change": -1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_003b"
+      }
+    ]
+  },
+  "scene_002b": {
+    "title": "Avoidance Spiral",
+    "narration": "You miss breakfast and rush to class late. Your professor frowns but says nothing. This is the fourth time already. Later, you overhear two classmates whispering about how 'you always look spaced.' Shame punches you in the gut.",
+    "choices": [
+      {
+        "label": "Try to focus harder",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 72,
+        "next_scene_id": "scene_003a"
+      },
+      {
+        "label": "Leave early to 'clear your head'",
+        "resist_change": -2,
+        "use_change": 2,
+        "time_advance": 72,
+        "next_scene_id": "scene_003c",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Shame in Addiction",
+          "description": "Negative self-conscious emotions, including shame and guilt, result from appraisal of how an experience pertains to the self in relation to others."
+        }
+      }
+    ]
+  },
+  "scene_003a": {
+    "title": "A Quiet Evening",
+    "narration": "You're studying when a drilling wave of hunger climbs your spine. You grip the desk until it passes. You whisper: 'I'm okay. I'm okay.' When was the last time you ate?",
+    "choices": [
+      {
+        "label": "Breathing exercise",
+        "resist_change": 3,
+        "use_change": 0,
+        "time_advance": 72,
+        "next_scene_id": "scene_004a"
+      },
+      {
+        "label": "Skip dinner, your stomach is in knots",
+        "resist_change": -4,
+        "use_change": 3,
+        "time_advance": 72,
+        "next_scene_id": "scene_004b",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Gut Punch",
+          "description": "Up to 50% of individuals with eating disorders use alcohol or illicit drugs."
+        }
+      }
+    ]
+  },
+  "scene_003b": {
+    "title": "Shame Always Gets In",
+    "narration": "You lie awake. Lying to Chloe gnaws at you. You remember your therapist saying shame distorts your sense of worth, common among people with early childhood trauma. You wrap your fingers around your wrist.",
+    "choices": [
+      {
+        "label": "Message Chloe and apologize",
+        "resist_change": 2,
+        "use_change": -1,
+        "time_advance": 72,
+        "next_scene_id": "scene_004a"
+      },
+      {
+        "label": "Ignore it",
+        "resist_change": -1,
+        "use_change": 1,
+        "time_advance": 72,
+        "next_scene_id": "scene_004c"
+      }
+    ]
+  },
+  "scene_003c": {
+    "title": "Ducking Responsibilities",
+    "narration": "You wander outside, cold air burning your nose. An email from your advisor telling you that your grades were starting to reflect your 'lack of performance' was looming in your head. It cut through you, almost as if all of your attempts to be perfect thus far will amount to nothing. You need to feel something.",
+    "choices": [
+      {
+        "label": "Go back inside to study",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 72,
+        "next_scene_id": "scene_004a"
+      },
+      {
+        "label": "Open old messages from your dealer",
+        "resist_change": -3,
+        "use_change": 3,
+        "time_advance": 72,
+        "next_scene_id": "scene_004b"
+      }
+    ]
+  },
+  "scene_004a": {
+    "title": "Small Victories",
+    "narration": "You turn in an assignment on time. Professor Sullivan nods approvingly. 'Good work.' It's small, but it feels like sunlight.",
+    "choices": [
+      {
+        "label": "Celebrate with tea at the café",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 72,
+        "next_scene_id": "scene_005a"
+      },
+      {
+        "label": "Push yourself to keep working for that approval",
+        "resist_change": 2,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_005b",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Pressure to Succeed",
+          "description": "Balance is hard for any person to find, but it can be especially difficult for those who take on more than they are realistically capable of and hold themselves to an impossible-to-reach standard."
+        }
+      }
+    ]
+  },
+  "scene_004b": {
+    "title": "The Message",
+    "narration": "Your old friend replies instantly: 'I'm around. If you ever need anything, I got you.' Your chest tightens. You know exactly what 'anything' means.",
+    "choices": [
+      {
+        "label": "Block the number",
+        "resist_change": 4,
+        "use_change": -2,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Friends or Foes",
+          "description": "Good friends are not only important as a way for a former drug user to voice frustrations about life in recovery, but they are also integral during that person's journey in recreating a new life for themselves."
+        }
+      },
+      {
+        "label": "Save the number 'just in case.'",
+        "resist_change": -3,
+        "use_change": 3,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_005c"
+      }
+    ]
+  },
+  "scene_004c": {
+    "title": "Growing Distance",
+    "narration": "You try to study, but Chloe doesn't sit next to you anymore. Nobody does. Many only know you from the time you completely blacked out at the sophomore homecoming frat party. You feel the separation widening.",
+    "choices": [
+      {
+        "label": "Reach out to her",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_005a"
+      },
+      {
+        "label": "Let the friendship fade. It's her fault anyway",
+        "resist_change": -1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_005c",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Lonely",
+          "description": "Too much time on one's own can foment powerful senses of boredom, anxiety, and loneliness, as well as precipitate the return of painful memories, against which substances provide a means of relief."
+        }
+      }
+    ]
+  },
+  "scene_005a": {
+    "title": "You're Trying",
+    "narration": "You attend an on-campus recovery meeting. The room smells like coffee and peppermint gum. Someone talks about the difficulty of staying sober despite wanting to be. You nod silently.",
+    "choices": [
+      {
+        "label": "Share your own struggles",
+        "resist_change": 3,
+        "use_change": -1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_006a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Recovery",
+          "description": "There are safe and effective ways to recover from SUDs. Finding the right treatment option can be the key to a successful recovery journey."
+        }
+      },
+      {
+        "label": "Stay silent but listen",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_006b"
+      }
+    ]
+  },
+  "scene_005b": {
+    "title": "Overworking",
+    "narration": "You push through readings until your eyes blur. Exhaustion can be as dangerous as temptation.",
+    "choices": [
+      {
+        "label": "Rest before burnout",
+        "resist_change": 2,
+        "use_change": -1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_006b"
+      },
+      {
+        "label": "Take caffeine and keep going",
+        "resist_change": -1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_006c",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Sugar Looks Like Salt",
+          "description": "Several epidemiological studies indicate that regular caffeine intake creates dependence, which in part depends on withdrawal symptoms."
+        }
+      }
+    ]
+  },
+  "scene_005c": {
+    "title": "The Craving Surface",
+    "narration": "Walking past the pharmacy triggers a memory. Pill bottles rattling, numb warmth spreading through your ribs.",
+    "choices": [
+      {
+        "label": "Call a recovery peer",
+        "resist_change": 3,
+        "use_change": -1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_006a"
+      },
+      {
+        "label": "Promise yourself 'one won't hurt.'",
+        "resist_change": -4,
+        "use_change": 5,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_006d"
+      }
+    ]
+  },
+  "scene_006a": {
+    "title": "Support Line",
+    "narration": "You talk with a recovery mentor. 'Cravings aren't failure,' they remind you. 'They're part of healing.' Your chest loosens.",
+    "choices": [
+      {
+        "label": "Commit to weekly check-ins",
+        "resist_change": 4,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_007a"
+      },
+      {
+        "label": "Say maybe",
+        "resist_change": 1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_007b"
+      }
+    ]
+  },
+  "scene_006b": {
+    "title": "Quiet Strength",
+    "narration": "You study with Chloe again. 'You seem better,' she says softly.",
+    "choices": [
+      {
+        "label": "Confide in her",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_007a"
+      },
+      {
+        "label": "Keep it surface-level",
+        "resist_change": 0,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_007b"
+      }
+    ]
+  },
+  "scene_006c": {
+    "title": "Tension Rising",
+    "narration": "You're stretched thin. Your hands shake. Your thoughts blur.",
+    "choices": [
+      {
+        "label": "Take a walk",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_007b"
+      },
+      {
+        "label": "Look up your old dealer again",
+        "resist_change": -3,
+        "use_change": 4,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_006d"
+      }
+    ]
+  },
+  "scene_006d": {
+    "title": "Ecstasy",
+    "narration": "You take a pill. Colored like children's taffy. Warmth blooms immediately, along with guilt. You can hear the giggles of your 14th birthday party, the last time you were truly alive. The world softens, then darkens.",
+    "choices": [
+      {
+        "label": "Reach out for help immediately",
+        "resist_change": 5,
+        "use_change": -4,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_007c"
+      },
+      {
+        "label": "Hide it and pretend nothing happened",
+        "resist_change": -2,
+        "use_change": 3,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_007d"
+      }
+    ],
+    "end": "relapse"
+  },
+  "scene_007a": {
+    "title": "Stability Steps",
+    "narration": "Your grades stabilize. You breathe easier. You even laugh at a joke.",
+    "choices": [
+      {
+        "label": "Keep following structure",
+        "resist_change": 3,
+        "use_change": -1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_008a"
+      },
+      {
+        "label": "Ease off the routine",
+        "resist_change": 0,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_008b"
+      }
+    ]
+  },
+  "scene_007b": {
+    "title": "Drifting",
+    "narration": "You feel suspended. Not falling, not rising. This much silence in your life almost feels threatening.",
+    "choices": [
+      {
+        "label": "Re-commit to meetings",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_008a"
+      },
+      {
+        "label": "'Play it by ear'",
+        "resist_change": -2,
+        "use_change": 2,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_008b"
+      }
+    ]
+  },
+  "scene_007c": {
+    "title": "You're Not Alone",
+    "narration": "Your mentor answers your call. 'Relapse isn't the end,' they say. 'It's information.'",
+    "choices": [
+      {
+        "label": "Return to meetings",
+        "resist_change": 4,
+        "use_change": -2,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_008a"
+      },
+      {
+        "label": "Stay quiet about it",
+        "resist_change": 0,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_008b"
+      }
+    ]
+  },
+  "scene_007d": {
+    "title": "Numbness Creeps",
+    "narration": "You take again. More this time. You convinced yourself that this is all you'll ever be. Your breathing slows. You hear your young cries for your mother to wake up. A friend finds you on the bathroom floor, half conscious and gurgling on your own vomit and calls for help.",
+    "choices": [
+      {
+        "label": "Wake in the hospital",
         "resist_change": 5,
         "use_change": -5,
-        "time_advance": 0.5,
-        "next_scene_id": "scene_004"
+        "time_advance": 0.2,
+        "next_scene_id": "scene_008c"
+      }
+    ],
+    "end": "relapse"
+  },
+  "scene_008a": {
+    "title": "Spring Hope",
+    "narration": "The trees are budding. You feel a cautious optimism.",
+    "choices": [
+      {
+        "label": "Walk with Chloe",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_009a"
       },
       {
-        "label": "Continue scrolling and respond to everyone",
-        "resist_change": -10,
-        "use_change": 15,
-        "time_advance": 1,
-        "next_scene_id": "scene_relapse"
+        "label": "Study alone",
+        "resist_change": 0,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_009b"
       }
     ]
   },
-  "scene_004": {
-    "title": "Kitchen Routine",
-    "narration": "In the kitchen, you take your time preparing a nutritious breakfast. The routine feels grounding, and you appreciate taking care of your body. As you cook, you think about your plans for the day.\n\nYou remember you have a choice about how to spend your afternoon. What sounds most supportive of your recovery?",
-    "toolkit": true,
+  "scene_008b": {
+    "title": "Wavering",
+    "narration": "You feel isolated again. Small triggers surface daily.",
     "choices": [
       {
-        "label": "Visit a recovery meeting or support group",
-        "resist_change": 20,
-        "use_change": -15,
-        "time_advance": 2,
-        "next_scene_id": "scene_win",
+        "label": "Call your mentor",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_009a"
+      },
+      {
+        "label": "Text old friend again",
+        "resist_change": -3,
+        "use_change": 3,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_009c"
+      }
+    ]
+  },
+  "scene_008c": {
+    "title": "Wake Up Call",
+    "narration": "A nurse tells you, 'You're lucky. This could've been worse.' You stare at the ceiling, realizing how close things came. Was this how things were supposed to turn out?",
+    "choices": [
+      {
+        "label": "Commit to renewed sobriety",
+        "resist_change": 5,
+        "use_change": -3,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_009a"
+      }
+    ]
+  },
+  "scene_009a": {
+    "title": "Finals Week",
+    "narration": "You study in the library. It's tough, but you're proud. Your mom calls. It's been a while since you two spoke. She sounds exhausted. You hope that she has kept herself sober. 'You're doing great, baby. Hang in there.'",
+    "choices": [
+      {
+        "label": "Take a break and speak with her",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_010a",
         "resource_link": {
-          "url": "https://www.aa.org/find-aa",
-          "text": "Find Local AA Meetings",
-          "description": "Locate Alcoholics Anonymous meetings in your area for ongoing support and community."
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Family Matters",
+          "description": "Drug addiction doesn't just affect the individual—it sends shockwaves through entire families."
         }
       },
       {
-        "label": "Spend time on a creative hobby you enjoy",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 3,
-        "next_scene_id": "scene_win",
-        "unlock_tool": "creative_expression"
-      },
-      {
-        "label": "Decide to isolate and stay home all day",
-        "resist_change": -15,
-        "use_change": 10,
-        "time_advance": 8,
-        "next_scene_id": "scene_relapse"
+        "label": "Push through, the pressure sinking deeper with her words",
+        "resist_change": 1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_010b"
       }
     ]
   },
-  "scene_win": {
-    "title": "Strong Foundation",
-    "narration": "You've successfully navigated your morning and made choices that support your recovery. You feel proud of yourself for staying committed to your goals and using healthy coping strategies.\n\nThis kind of mindful decision-making is building a strong foundation for your continued recovery journey.",
+  "scene_009b": {
+    "title": "Close Call",
+    "narration": "You spot someone from high school. Someone who used like you. You freeze. Jay, was her name. She didn't recover, the syringe wounds never lie.",
+    "choices": [
+      {
+        "label": "Walk away",
+        "resist_change": 3,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_010a"
+      }
+    ]
+  },
+  "scene_009c": {
+    "title": "Temptation's Edge",
+    "narration": "A message pops up on your screen: 'Wanna relax? I got the good stuff that you love.' You hesitate. Your eyes dart between the syringe and eggplant emoji your old 'companion' sent.",
+    "choices": [
+      {
+        "label": "Delete the message",
+        "resist_change": 3,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_010a"
+      }
+    ]
+  },
+  "scene_010a": {
+    "title": "Going Home",
+    "narration": "Back in Kensington for the summer. The streets smell like memories and CVS band-aids. Your mom hugs you tightly. 'You're doing better,' she says, voice shaky. You lost weight, but so has she.",
+    "choices": [
+      {
+        "label": "Stay home and catch up with family",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 0.2,
+        "next_scene_id": "scene_011a"
+      },
+      {
+        "label": "Wander the neighborhood",
+        "resist_change": -2,
+        "use_change": 3,
+        "time_advance": 0.2,
+        "next_scene_id": "scene_011b"
+      }
+    ]
+  },
+  "scene_010b": {
+    "title": "Pressure Sinks In",
+    "narration": "The weight of expectation settles on your shoulders. You keep pushing despite the cost.",
+    "choices": [
+      {
+        "label": "Keep going",
+        "resist_change": 1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_011a"
+      }
+    ]
+  },
+  "scene_011a": {
+    "title": "Family Pressure",
+    "narration": "You and your mom wash up dishes from dinner, catching up on missed memories and playful banter. A silence washes over the kitchen, and she sighs with a slight smile, 'You're the one who's going to make it out.' It's meant lovingly, but it feels like an added weight. You instantly feel the heat in your eyes well up.",
+    "choices": [
+      {
+        "label": "Tell her it's hard",
+        "resist_change": 1,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_012"
+      },
+      {
+        "label": "Stay silent but nod",
+        "resist_change": -1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_012"
+      }
+    ]
+  },
+  "scene_011b": {
+    "title": "Dangerous Familiarity",
+    "narration": "Morning comes. To get out of the house, you take your old stroll. Under a wire gate, over a hill, into an alleyway between some apartments. You pass the corner where you've used before. A guy nods at you. 'Need anything?'",
+    "choices": [
+      {
+        "label": "Walk away fast",
+        "resist_change": 4,
+        "use_change": -2,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_012"
+      }
+    ]
+  },
+  "scene_012": {
+    "title": "Return to Campus",
+    "narration": "You're back at school. You missed the structure. Chloe hugs you. 'I'm glad you're here, Jelly.' You can't help but tear up hearing the nickname she gave you.",
+    "choices": [
+      {
+        "label": "Join a recovery group again and clubs",
+        "resist_change": 3,
+        "use_change": -1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_013"
+      },
+      {
+        "label": "Try to manage on your own",
+        "resist_change": -1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_013"
+      }
+    ]
+  },
+  "scene_013": {
+    "title": "A New Semester",
+    "narration": "You feel different this time. More grounded. Not perfect, but present.",
+    "choices": [
+      {
+        "label": "Focus on an established routine",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_014"
+      },
+      {
+        "label": "Overcommit to classes",
+        "resist_change": 0,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_014"
+      }
+    ]
+  },
+  "scene_014": {
+    "title": "A Friend in Need",
+    "narration": "A classmate confides that her brother struggles with opioids. You feel the familiar ache of recognition. Especially after hearing he's only 19.",
+    "choices": [
+      {
+        "label": "Offer support after lecture",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_015"
+      },
+      {
+        "label": "Avoid the topic",
+        "resist_change": -1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_015"
+      }
+    ]
+  },
+  "scene_015": {
+    "title": "Trigger Season",
+    "narration": "Cold winds blow. Holidays loom, your old relapse season. You feel the pull knocking at your door.",
+    "choices": [
+      {
+        "label": "Make a safety plan and text Chloe",
+        "resist_change": 4,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_016"
+      },
+      {
+        "label": "Tell yourself you're stronger now",
+        "resist_change": 1,
+        "use_change": 1,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_016"
+      }
+    ]
+  },
+  "scene_016": {
+    "title": "The Test",
+    "narration": "You return home. Your old friend messages: 'You around? I miss you.' Your breath catches.",
+    "choices": [
+      {
+        "label": "Block the number",
+        "resist_change": 5,
+        "use_change": -3,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_017a"
+      },
+      {
+        "label": "Answer 'Hey'",
+        "resist_change": -3,
+        "use_change": 4,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_017b"
+      }
+    ]
+  },
+  "scene_017a": {
+    "title": "Choosing Yourself",
+    "narration": "You delete the entire chat. You sit with the ache, but it passes. You made the hard choice.",
+    "choices": [
+      {
+        "label": "Move forward",
+        "resist_change": 2,
+        "use_change": 0,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_018"
+      }
+    ]
+  },
+  "scene_017b": {
+    "title": "Standing at the Edge",
+    "narration": "Your friend asks to meet. But you feel a wave of clarity. You don't want this. Not again. Not ever.",
+    "choices": [
+      {
+        "label": "Walk away for good",
+        "resist_change": 4,
+        "use_change": -2,
+        "time_advance": 0.1,
+        "next_scene_id": "scene_018"
+      }
+    ]
+  },
+  "scene_018": {
+    "title": "The Turning Point",
+    "narration": "One year. One long, impossible, beautiful year. You sit by a window on New Year's Eve. You whisper to yourself: 'I made it. I'm still here.' Recovery isn't linear. It isn't pretty. But it's yours.",
     "choices": [],
     "end": "win"
-  },
-  "scene_relapse": {
-    "title": "Warning Signs",
-    "narration": "The choices you made today have led you away from your recovery goals. You're experiencing warning signs that suggest you need to reach out for support and refocus on your recovery strategies.\n\nRemember, setbacks can be learning opportunities. Tomorrow is a new day to start fresh.",
-    "choices": [],
-    "end": "relapse"
   }
 }
