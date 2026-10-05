@@ -532,11 +532,18 @@ function process_pending_choice() {
     update_stats();
     close_resource_popup();
 
-    // Check game state outcomes
-    if (game_state.resist <= 0) {
+    const next_scene = scene_data[choice.next_scene_id];
+    const ending = next_scene?.end;
+
+    // Check game state outcomes. Some supplied journeys use "success" as
+    // the positive ending label, so accept it as an alias for "win".
+    if (game_state.resist <= 0 || ending === 'relapse') {
         trigger_relapse();
-    } else if (scene_data[choice.next_scene_id]?.end === 'win') {
+    } else if (ending === 'win' || ending === 'success') {
         trigger_win();
+    } else if (!next_scene) {
+        console.error(`Scene ID ${choice.next_scene_id} not found`);
+        show_error_message('This journey path is unavailable. Please restart the journey and try another choice.');
     } else {
         game_state.pending_choice = null;
         game_state.pending_scene_data = null;
@@ -902,4 +909,4 @@ function show_tool_unlock_popup(tool) {
 }
 
 // Initialize the game when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', init_game); 
+document.addEventListener('DOMContentLoaded', init_game);

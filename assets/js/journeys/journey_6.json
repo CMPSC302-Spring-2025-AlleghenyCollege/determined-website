@@ -1,0 +1,1310 @@
+﻿{
+  "metadata":  {
+      "title":  "Student Left Blank",
+      "description":  "Student left Blank",
+      "image":  "../assets/images/bg-gradient-2.jpg"
+    },
+  "initial_values":  {
+      "resist":  50,
+      "use":  50
+    },
+  "scene_001":  {
+      "title":  "Getting Ready",
+      "narration":  "You stand in front of your bathroom mirror. On the shelf behind you are your standard toiletries and the stuff you usually take to start your day. You start to grab it out of habit. You stop and think to yourself, 'It's August 1st, Mom's birthday. Just don't use today before dinner. One day, you can do that, can't you?'",
+      "choices":  [
+          {
+            "label":  "Yes, I can. For mom.",
+            "resist_change":  0,
+            "use_change":  0,
+            "time_advance":  10,
+            "next_scene_id":  "scene_002a",
+            "resource_link":  {
+                "url":  "Student Left Blank",
+                "text":  "Student Left Blank",
+                "description":  "You stand in front of your bathroom mirror. On the shelf behind you are your standard toiletries and the stuff you usually take to start your day. You start to grab it out of habit. You stop and think to yourself, 'It's August 1st, Mom's birthday. Just don't use today before dinner. One day, you can do that, can't you?'"
+              }
+          },
+        {
+          "label":  "No, I don't think I can. I need it if I'm going to survive mom's birthday dinner.",
+          "resist_change":  -10,
+          "use_change":  20,
+          "time_advance":  1,
+          "next_scene_id":  "scene_relapse",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You stand in front of your bathroom mirror. On the shelf behind you are your standard toiletries and the stuff you usually take to start your day. You start to grab it out of habit. You stop and think to yourself, 'It's August 1st, Mom's birthday. Just don't use today before dinner. One day, you can do that, can't you?'"
+            }
+        }
+    ]
+},
+"scene_002a":  {
+    "title":  "Mom's Birthday Dinner",
+    "narration":  "You've made it to your mother's birthday dinner. At the dinner table, your siblings talk about their jobs, kids, and the state of the world. Everyone is laughing and enjoying themselves. You're just trying to focus, but it's hard when you didn't get your fix this morning. As your legs bounce under the table and your skin starts to feel too tight for your body, your mom asks, 'You okay honey, you've been quiet tonight?' Everyone looks at you for an answer.",
+    "choices":  [
+        {
+          "label":  "You force a smile, 'Just tired. Long week.'",
+          "resist_change":  0,
+          "use_change":  0,
+          "time_advance":  4,
+          "next_scene_id":  "scene_002bA",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You've made it to your mother's birthday dinner. At the dinner table, your siblings talk about their jobs, kids, and the state of the world. Everyone is laughing and enjoying themselves. You're just trying to focus, but it's hard when you didn't get your fix this morning. As your legs bounce under the table and your skin starts to feel too tight for your body, your mom asks, 'You okay honey, you've been quiet tonight?' Everyone looks at you for an answer."
+            }
+        },
+      {
+        "label":  "You rub your stomach, 'I think I'm coming down with something. I might head out early.'",
+        "resist_change":  -10,
+        "use_change":  20,
+        "time_advance":  1,
+        "next_scene_id":  "scene_002bB",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You've made it to your mother's birthday dinner. At the dinner table, your siblings talk about their jobs, kids, and the state of the world. Everyone is laughing and enjoying themselves. You're just trying to focus, but it's hard when you didn't get your fix this morning. As your legs bounce under the table and your skin starts to feel too tight for your body, your mom asks, 'You okay honey, you've been quiet tonight?' Everyone looks at you for an answer."
+          }
+      },
+    {
+      "label":  "You take a breath, 'I'm okay. Just been dealing with some stuff. I've been thinking about making some changes.'",
+      "resist_change":  20,
+      "use_change":  -10,
+      "time_advance":  4,
+      "next_scene_id":  "scene_002c",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You've made it to your mother's birthday dinner. At the dinner table, your siblings talk about their jobs, kids, and the state of the world. Everyone is laughing and enjoying themselves. You're just trying to focus, but it's hard when you didn't get your fix this morning. As your legs bounce under the table and your skin starts to feel too tight for your body, your mom asks, 'You okay honey, you've been quiet tonight?' Everyone looks at you for an answer."
+        }
+    }
+]
+},
+"scene_002bA":  {
+    "title":  "Getting Home",
+    "narration":  "You pull into your driveway and kill the engine. The silence rings in your ears as you replay the look on your mom's face and the last thing you heard your dad say: 'Everyone's soft these days.' Inside, the house is empty as usual. You turn on the lights but it doesn't help much. The weight of your guilt has settled on you too much.",
+    "choices":  [
+        {
+          "label":  "It's not like I used before dinner, I kept my promise. Now I just need to use and recover.",
+          "resist_change":  -10,
+          "use_change":  15,
+          "time_advance":  3,
+          "next_scene_id":  "scene_relapse",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You pull into your driveway and kill the engine. The silence rings in your ears as you replay the look on your mom's face and the last thing you heard your dad say: 'Everyone's soft these days.' Inside, the house is empty as usual. You turn on the lights but it doesn't help much. The weight of your guilt has settled on you too much."
+            }
+        },
+      {
+        "label":  "You just need to toughen up. Work harder and stop whining. Be a man.",
+        "resist_change":  -15,
+        "use_change":  0,
+        "time_advance":  3,
+        "next_scene_id":  "scene_002bB",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You pull into your driveway and kill the engine. The silence rings in your ears as you replay the look on your mom's face and the last thing you heard your dad say: 'Everyone's soft these days.' Inside, the house is empty as usual. You turn on the lights but it doesn't help much. The weight of your guilt has settled on you too much."
+          }
+      },
+    {
+      "label":  "Drown out your feelings with screens.",
+      "resist_change":  0,
+      "use_change":  15,
+      "time_advance":  3,
+      "next_scene_id":  "scene_002bB",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You pull into your driveway and kill the engine. The silence rings in your ears as you replay the look on your mom's face and the last thing you heard your dad say: 'Everyone's soft these days.' Inside, the house is empty as usual. You turn on the lights but it doesn't help much. The weight of your guilt has settled on you too much."
+        }
+    }
+]
+},
+"scene_002bB":  {
+    "title":  "Alone at Home",
+    "narration":  "You drop yourself onto your bed and reflect on your evening. Do you use to cope with your mental problems, or are your problems from using? You start to imagine what it feels like to fit in, feel like you belong with everyone. The thoughts hit you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, if your problems are a result of your use, it's worth one more shot.",
+    "choices":  [
+        {
+          "label":  "Maybe I don't need to quit, just cut back. I can set rules in my head: only on the weekends, or after a bad day at work.",
+          "resist_change":  15,
+          "use_change":  0,
+          "time_advance":  8,
+          "next_scene_id":  "scene_003",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You drop yourself onto your bed and reflect on your evening. Do you use to cope with your mental problems, or are your problems from using? You start to imagine what it feels like to fit in, feel like you belong with everyone. The thoughts hit you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, if your problems are a result of your use, it's worth one more shot."
+            }
+        },
+      {
+        "label":  "Starting now, I'm done. That's it. I'll try quitting one last time just to see if they're the problem or the solution.",
+        "resist_change":  0,
+        "use_change":  -15,
+        "time_advance":  10,
+        "next_scene_id":  "scene_003",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You drop yourself onto your bed and reflect on your evening. Do you use to cope with your mental problems, or are your problems from using? You start to imagine what it feels like to fit in, feel like you belong with everyone. The thoughts hit you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, if your problems are a result of your use, it's worth one more shot."
+          }
+      },
+    {
+      "label":  "I really don't know. It's never worked when I tried to quit before. I'll use it one more time, then think about it tomorrow.",
+      "resist_change":  -10,
+      "use_change":  20,
+      "time_advance":  8,
+      "next_scene_id":  "scene_relapse",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You drop yourself onto your bed and reflect on your evening. Do you use to cope with your mental problems, or are your problems from using? You start to imagine what it feels like to fit in, feel like you belong with everyone. The thoughts hit you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, if your problems are a result of your use, it's worth one more shot."
+        }
+    }
+]
+},
+"scene_002c":  {
+    "title":  "Alone at Home",
+    "narration":  "The house is quiet when you get home. You drop yourself onto your bed, replaying the moments from dinner and the little comforts your family gave you, even if they didn't know the issues were from what you were using. You imagine what it would be like to come to them and tell them, 'I've struggled with using for the past 10 years, but now I'm finally clean.' The thought of it hits you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, for the first time in a long time, trying doesn't feel completely pointless.",
+    "choices":  [
+        {
+          "label":  "Starting now, I'm done. That's it. I'll quit so I can make my family proud.",
+          "resist_change":  0,
+          "use_change":  -15,
+          "time_advance":  8,
+          "next_scene_id":  "scene_003",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "The house is quiet when you get home. You drop yourself onto your bed, replaying the moments from dinner and the little comforts your family gave you, even if they didn't know the issues were from what you were using. You imagine what it would be like to come to them and tell them, 'I've struggled with using for the past 10 years, but now I'm finally clean.' The thought of it hits you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, for the first time in a long time, trying doesn't feel completely pointless."
+            }
+        },
+      {
+        "label":  "Maybe I don't need to quit, just cut back. I can set rules in my head: only on the weekends, or after a bad day at work.",
+        "resist_change":  15,
+        "use_change":  0,
+        "time_advance":  8,
+        "next_scene_id":  "scene_003",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "The house is quiet when you get home. You drop yourself onto your bed, replaying the moments from dinner and the little comforts your family gave you, even if they didn't know the issues were from what you were using. You imagine what it would be like to come to them and tell them, 'I've struggled with using for the past 10 years, but now I'm finally clean.' The thought of it hits you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, for the first time in a long time, trying doesn't feel completely pointless."
+          }
+      },
+    {
+      "label":  "There is no better time than the present. The idea of coming clean for your family gives you the motivation to throw out your stash.",
+      "resist_change":  10,
+      "use_change":  -15,
+      "time_advance":  8,
+      "next_scene_id":  "scene_003",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "The house is quiet when you get home. You drop yourself onto your bed, replaying the moments from dinner and the little comforts your family gave you, even if they didn't know the issues were from what you were using. You imagine what it would be like to come to them and tell them, 'I've struggled with using for the past 10 years, but now I'm finally clean.' The thought of it hits you harder than you expect. You don't have much faith in yourself. You've tried to quit before, and you've always gone back; however, for the first time in a long time, trying doesn't feel completely pointless."
+        }
+    }
+]
+},
+"scene_003":  {
+    "title":  "A New Beginning",
+    "narration":  "You wake up to a strip of light shining onto your face. For a moment, you just lie there, waiting for your brain to catch up. Your revelation the night before wasn't just a late-night feeling; maybe it really is worth a shot. The thought of quitting makes you uneasy, but you also can't shake off the other side of it. The possibility that everything can finally be different. Are you really ready to fully commit to quitting?",
+    "choices":  [
+        {
+          "label":  "Yes, I am ready.",
+          "resist_change":  0,
+          "use_change":  0,
+          "time_advance":  24,
+          "next_scene_id":  "scene_004",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You wake up to a strip of light shining onto your face. For a moment, you just lie there, waiting for your brain to catch up. Your revelation the night before wasn't just a late-night feeling; maybe it really is worth a shot. The thought of quitting makes you uneasy, but you also can't shake off the other side of it. The possibility that everything can finally be different. Are you really ready to fully commit to quitting?"
+            }
+        }
+    ]
+},
+"scene_004":  {
+    "title":  "1 day down",
+    "narration":  "You wake up before your alarm. Your mouth is dry, your muscles ache, and a layer of sweat covers your body. It takes a second, but it finally clicks: you're 24 hours sober. A small win, but a win nonetheless. 'Today isn't special, just another workday,' you think to yourself. Maybe it is just another workday, but this time you're trying without the one thing that's always held you up.",
+    "choices":  [
+        {
+          "label":  "Just get through today, one day at a time.",
+          "resist_change":  0,
+          "use_change":  -10,
+          "time_advance":  144,
+          "next_scene_id":  "scene_005",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You wake up before your alarm. Your mouth is dry, your muscles ache, and a layer of sweat covers your body. It takes a second, but it finally clicks: you're 24 hours sober. A small win, but a win nonetheless. 'Today isn't special, just another workday,' you think to yourself. Maybe it is just another workday, but this time you're trying without the one thing that's always held you up."
+            }
+        },
+      {
+        "label":  "Pick up the phone and dial your boss's number: 'Hey, I'm not feeling great. I think I'm going to have to sit out today.'",
+        "resist_change":  -10,
+        "use_change":  20,
+        "time_advance":  144,
+        "next_scene_id":  "scene_005",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You wake up before your alarm. Your mouth is dry, your muscles ache, and a layer of sweat covers your body. It takes a second, but it finally clicks: you're 24 hours sober. A small win, but a win nonetheless. 'Today isn't special, just another workday,' you think to yourself. Maybe it is just another workday, but this time you're trying without the one thing that's always held you up."
+          }
+      },
+    {
+      "label":  "Maybe I shouldn't go to work, but I need to do something productive with my day.",
+      "resist_change":  10,
+      "use_change":  10,
+      "time_advance":  144,
+      "next_scene_id":  "scene_005",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You wake up before your alarm. Your mouth is dry, your muscles ache, and a layer of sweat covers your body. It takes a second, but it finally clicks: you're 24 hours sober. A small win, but a win nonetheless. 'Today isn't special, just another workday,' you think to yourself. Maybe it is just another workday, but this time you're trying without the one thing that's always held you up."
+        }
+    }
+]
+},
+"scene_005":  {
+    "title":  "After Monday",
+    "narration":  "You have the next two days off on your work schedule. You know you need to stay busy, or you might start looking for a way to get your fix. What should you do?",
+    "choices":  [
+        {
+          "label":  "Go outside and start working on the overgrown patch of dirt in the backyard.",
+          "resist_change":  20,
+          "use_change":  0,
+          "time_advance":  12,
+          "next_scene_id":  "scene_006a",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You have the next two days off on your work schedule. You know you need to stay busy, or you might start looking for a way to get your fix. What should you do?"
+            }
+        },
+      {
+        "label":  "Turn on the TV and try to drown out your feelings with a movie marathon.",
+        "resist_change":  -10,
+        "use_change":  10,
+        "time_advance":  12,
+        "next_scene_id":  "scene_006b",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You have the next two days off on your work schedule. You know you need to stay busy, or you might start looking for a way to get your fix. What should you do?"
+          }
+      },
+    {
+      "label":  "Try to clean the house and then get distracted by your phone.",
+      "resist_change":  -10,
+      "use_change":  10,
+      "time_advance":  12,
+      "next_scene_id":  "scene_006b",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You have the next two days off on your work schedule. You know you need to stay busy, or you might start looking for a way to get your fix. What should you do?"
+        }
+    }
+]
+},
+"scene_006a":  {
+    "title":  "A New Hobby",
+    "narration":  "By the time the sun starts to set, your back is sore in a way that actually makes sense. You wash the dirt off your hands and watch the mud swirl down the drain. For some reason, that makes you feel proud. Out of the window, the patch of dirt looks different than it did before. It's not a garden yet, but you can see the work you've done. You fall asleep thinking not about using, but about neat lines of green and something you've grown with your own two hands.",
+    "choices":  [
+        {
+          "label":  "Winter's coming up, I should plant some pansies or violas to start.",
+          "resist_change":  10,
+          "use_change":  0,
+          "time_advance":  96,
+          "next_scene_id":  "scene_007",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "By the time the sun starts to set, your back is sore in a way that actually makes sense. You wash the dirt off your hands and watch the mud swirl down the drain. For some reason, that makes you feel proud. Out of the window, the patch of dirt looks different than it did before. It's not a garden yet, but you can see the work you've done. You fall asleep thinking not about using, but about neat lines of green and something you've grown with your own two hands."
+            }
+        },
+      {
+        "label":  "I absolutely love the look of cosmos, I should plant them.",
+        "resist_change":  10,
+        "use_change":  20,
+        "time_advance":  96,
+        "next_scene_id":  "scene_007",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "By the time the sun starts to set, your back is sore in a way that actually makes sense. You wash the dirt off your hands and watch the mud swirl down the drain. For some reason, that makes you feel proud. Out of the window, the patch of dirt looks different than it did before. It's not a garden yet, but you can see the work you've done. You fall asleep thinking not about using, but about neat lines of green and something you've grown with your own two hands."
+          }
+      },
+    {
+      "label":  "Tomorrow I should research what flowers to plant.",
+      "resist_change":  15,
+      "use_change":  -10,
+      "time_advance":  96,
+      "next_scene_id":  "scene_007",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "By the time the sun starts to set, your back is sore in a way that actually makes sense. You wash the dirt off your hands and watch the mud swirl down the drain. For some reason, that makes you feel proud. Out of the window, the patch of dirt looks different than it did before. It's not a garden yet, but you can see the work you've done. You fall asleep thinking not about using, but about neat lines of green and something you've grown with your own two hands."
+        }
+    }
+]
+},
+"scene_006b":  {
+    "title":  "A New Hobby",
+    "narration":  "In your room, you drop onto the bed still in your clothes. Your muscles ache and your mind won't shut up. You realize doing nothing all day didn't make the withdrawals pass faster or make any thoughts quieter. It just left you alone with them. You decide to find a hobby that keeps you occupied while you're not working. Your mind flickers to the patch of overgrowth in your backyard. You start making plans in your head and decide to start tomorrow, no matter what.",
+    "choices":  [
+        {
+          "label":  "Winter's coming up, I should plant some pansies or violas to start.",
+          "resist_change":  10,
+          "use_change":  0,
+          "time_advance":  96,
+          "next_scene_id":  "scene_007",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "In your room, you drop onto the bed still in your clothes. Your muscles ache and your mind won't shut up. You realize doing nothing all day didn't make the withdrawals pass faster or make any thoughts quieter. It just left you alone with them. You decide to find a hobby that keeps you occupied while you're not working. Your mind flickers to the patch of overgrowth in your backyard. You start making plans in your head and decide to start tomorrow, no matter what."
+            }
+        },
+      {
+        "label":  "I absolutely love the look of cosmos, I should plant them.",
+        "resist_change":  10,
+        "use_change":  20,
+        "time_advance":  96,
+        "next_scene_id":  "scene_007",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "In your room, you drop onto the bed still in your clothes. Your muscles ache and your mind won't shut up. You realize doing nothing all day didn't make the withdrawals pass faster or make any thoughts quieter. It just left you alone with them. You decide to find a hobby that keeps you occupied while you're not working. Your mind flickers to the patch of overgrowth in your backyard. You start making plans in your head and decide to start tomorrow, no matter what."
+          }
+      },
+    {
+      "label":  "Tomorrow I should research what flowers to plant.",
+      "resist_change":  15,
+      "use_change":  -10,
+      "time_advance":  96,
+      "next_scene_id":  "scene_007",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "In your room, you drop onto the bed still in your clothes. Your muscles ache and your mind won't shut up. You realize doing nothing all day didn't make the withdrawals pass faster or make any thoughts quieter. It just left you alone with them. You decide to find a hobby that keeps you occupied while you're not working. Your mind flickers to the patch of overgrowth in your backyard. You start making plans in your head and decide to start tomorrow, no matter what."
+        }
+    }
+]
+},
+"scene_007":  {
+    "title":  "The Leftover Stuff",
+    "narration":  "Today marks 14 days sober, longer than you've ever made it before. Against your better judgment, you actually feel proud. You begin sorting through your dirty laundry when suddenly you feel the small shape of something you used to know. You forget it was in there, and now you don't know what to do. You stand in the middle of your room, with two weeks of progress in one hand and failure in the other. You need to decide what to do with it.",
+    "choices":  [
+        {
+          "label":  "Maybe I'll just put it back into the bathroom with the rest of my stuff. I'll keep it as a memento of my progress.",
+          "resist_change":  -20,
+          "use_change":  20,
+          "time_advance":  52,
+          "next_scene_id":  "scene_008",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "Today marks 14 days sober, longer than you've ever made it before. Against your better judgment, you actually feel proud. You begin sorting through your dirty laundry when suddenly you feel the small shape of something you used to know. You forget it was in there, and now you don't know what to do. You stand in the middle of your room, with two weeks of progress in one hand and failure in the other. You need to decide what to do with it."
+            }
+        },
+      {
+        "label":  "I need to hide this, just in case.",
+        "resist_change":  -20,
+        "use_change":  30,
+        "time_advance":  52,
+        "next_scene_id":  "scene_008",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "Today marks 14 days sober, longer than you've ever made it before. Against your better judgment, you actually feel proud. You begin sorting through your dirty laundry when suddenly you feel the small shape of something you used to know. You forget it was in there, and now you don't know what to do. You stand in the middle of your room, with two weeks of progress in one hand and failure in the other. You need to decide what to do with it."
+          }
+      },
+    {
+      "label":  "I have to get rid of it immediately.",
+      "resist_change":  20,
+      "use_change":  -10,
+      "time_advance":  52,
+      "next_scene_id":  "scene_008",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "Today marks 14 days sober, longer than you've ever made it before. Against your better judgment, you actually feel proud. You begin sorting through your dirty laundry when suddenly you feel the small shape of something you used to know. You forget it was in there, and now you don't know what to do. You stand in the middle of your room, with two weeks of progress in one hand and failure in the other. You need to decide what to do with it."
+        }
+    }
+]
+},
+"scene_008":  {
+    "title":  "At Work",
+    "narration":  "You're at work doing the same motions you've done a thousand times. You haven't been sleeping much, and when you did it was shallow and broken. A coworker asks, 'Hey, you good?' You say, 'I'm fine.' Then someone makes a harmless joke that rubs you the wrong way. You're at your limit and need to decide how to get through the rest of the shift.",
+    "choices":  [
+        {
+          "label":  "Take a bathroom break and try to ground yourself.",
+          "resist_change":  10,
+          "use_change":  0,
+          "time_advance":  116,
+          "next_scene_id":  "scene_009",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You're at work doing the same motions you've done a thousand times. You haven't been sleeping much, and when you did it was shallow and broken. A coworker asks, 'Hey, you good?' You say, 'I'm fine.' Then someone makes a harmless joke that rubs you the wrong way. You're at your limit and need to decide how to get through the rest of the shift."
+            }
+        },
+      {
+        "label":  "Snap at the coworker.",
+        "resist_change":  0,
+        "use_change":  15,
+        "time_advance":  116,
+        "next_scene_id":  "scene_009",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You're at work doing the same motions you've done a thousand times. You haven't been sleeping much, and when you did it was shallow and broken. A coworker asks, 'Hey, you good?' You say, 'I'm fine.' Then someone makes a harmless joke that rubs you the wrong way. You're at your limit and need to decide how to get through the rest of the shift."
+          }
+      },
+    {
+      "label":  "Try to power through with caffeine and anger.",
+      "resist_change":  -15,
+      "use_change":  0,
+      "time_advance":  116,
+      "next_scene_id":  "scene_009",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You're at work doing the same motions you've done a thousand times. You haven't been sleeping much, and when you did it was shallow and broken. A coworker asks, 'Hey, you good?' You say, 'I'm fine.' Then someone makes a harmless joke that rubs you the wrong way. You're at your limit and need to decide how to get through the rest of the shift."
+        }
+    }
+]
+},
+"scene_009":  {
+    "title":  "3 weeks down",
+    "narration":  "The weekend hits different when you are not using. You wake up late, but that doesn't mean you're well rested. Your body aches, your head throbs, and a restless crawl under your skin makes it hard to lie still. You sit on the edge of the bed and rub your face. Every part of you is screaming for some kind of relief. Then you think about how you are going to get through this day.",
+    "choices":  [
+        {
+          "label":  "I'll just take a hot shower and get through my day.",
+          "resist_change":  0,
+          "use_change":  0,
+          "time_advance":  2,
+          "next_scene_id":  "scene_010a",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "The weekend hits different when you are not using. You wake up late, but that doesn't mean you're well rested. Your body aches, your head throbs, and a restless crawl under your skin makes it hard to lie still. You sit on the edge of the bed and rub your face. Every part of you is screaming for some kind of relief. Then you think about how you are going to get through this day."
+            }
+        },
+      {
+        "label":  "I need to push myself to do some gardening. I know I'll enjoy it.",
+        "resist_change":  10,
+        "use_change":  0,
+        "time_advance":  6,
+        "next_scene_id":  "scene_010b",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "The weekend hits different when you are not using. You wake up late, but that doesn't mean you're well rested. Your body aches, your head throbs, and a restless crawl under your skin makes it hard to lie still. You sit on the edge of the bed and rub your face. Every part of you is screaming for some kind of relief. Then you think about how you are going to get through this day."
+          }
+      },
+    {
+      "label":  "Nope, I'm not doing anything today. I'll try tomorrow.",
+      "resist_change":  0,
+      "use_change":  10,
+      "time_advance":  4,
+      "next_scene_id":  "scene_010c",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "The weekend hits different when you are not using. You wake up late, but that doesn't mean you're well rested. Your body aches, your head throbs, and a restless crawl under your skin makes it hard to lie still. You sit on the edge of the bed and rub your face. Every part of you is screaming for some kind of relief. Then you think about how you are going to get through this day."
+        }
+    }
+]
+},
+"scene_010a":  {
+    "title":  "A Gut Punch",
+    "narration":  "You shut the water off and get out of the shower. You thought you built up the motivation to start your day, but now that you're out of the hot water, you're not so sure. As you exit, your eyes catch a glimpse of the shelf behind the sink, where you had always kept your stash. It hits you like a punch to the gut. Your body reacts before your mind can. For a long moment, you just stand there staring, every part of your body asking for relief.",
+    "choices":  [
+        {
+          "label":  "It might actually help me if I just take a little bit, just this once.",
+          "resist_change":  -10,
+          "use_change":  20,
+          "time_advance":  1,
+          "next_scene_id":  "scene_relapse",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You shut the water off and get out of the shower. You thought you built up the motivation to start your day, but now that you're out of the hot water, you're not so sure. As you exit, your eyes catch a glimpse of the shelf behind the sink, where you had always kept your stash. It hits you like a punch to the gut. Your body reacts before your mind can. For a long moment, you just stand there staring, every part of your body asking for relief."
+            }
+        },
+      {
+        "label":  "Who am I kidding? Of course not. I must remember why I'm doing this. I have to get clean.",
+        "resist_change":  10,
+        "use_change":  -10,
+        "time_advance":  324,
+        "next_scene_id":  "scene_011",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You shut the water off and get out of the shower. You thought you built up the motivation to start your day, but now that you're out of the hot water, you're not so sure. As you exit, your eyes catch a glimpse of the shelf behind the sink, where you had always kept your stash. It hits you like a punch to the gut. Your body reacts before your mind can. For a long moment, you just stand there staring, every part of your body asking for relief."
+          }
+      },
+    {
+      "label":  "I've been through this before. I know there is no such thing as just this once for me.",
+      "resist_change":  10,
+      "use_change":  -10,
+      "time_advance":  324,
+      "next_scene_id":  "scene_011",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You shut the water off and get out of the shower. You thought you built up the motivation to start your day, but now that you're out of the hot water, you're not so sure. As you exit, your eyes catch a glimpse of the shelf behind the sink, where you had always kept your stash. It hits you like a punch to the gut. Your body reacts before your mind can. For a long moment, you just stand there staring, every part of your body asking for relief."
+        }
+    }
+]
+},
+"scene_010b":  {
+    "title":  "A Familiar Catastrophe",
+    "narration":  "You're out back in the yard, knees in the dirt, fingers around some stubborn roots. Sweat is running down your back, but it's the good kind. Then you hear a sharp, panicked yell from the next house. 'WAKE UP! COME ON, MAN! QUICK, CALL AN AMBULANCE!' Your stomach drops. You know that panic: an overdose. Standing between your garden and your neighbor's house, you've been pulled between the new life you're trying to grow and the one you left behind. What should you do?",
+    "choices":  [
+        {
+          "label":  "Go over and call for help.",
+          "resist_change":  20,
+          "use_change":  -20,
+          "time_advance":  317,
+          "next_scene_id":  "scene_011",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You're out back in the yard, knees in the dirt, fingers around some stubborn roots. Sweat is running down your back, but it's the good kind. Then you hear a sharp, panicked yell from the next house. 'WAKE UP! COME ON, MAN! QUICK, CALL AN AMBULANCE!' Your stomach drops. You know that panic: an overdose. Standing between your garden and your neighbor's house, you've been pulled between the new life you're trying to grow and the one you left behind. What should you do?"
+            }
+        },
+      {
+        "label":  "Retreat inside and try to shut it out.",
+        "resist_change":  -20,
+        "use_change":  20,
+        "time_advance":  317,
+        "next_scene_id":  "scene_011",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You're out back in the yard, knees in the dirt, fingers around some stubborn roots. Sweat is running down your back, but it's the good kind. Then you hear a sharp, panicked yell from the next house. 'WAKE UP! COME ON, MAN! QUICK, CALL AN AMBULANCE!' Your stomach drops. You know that panic: an overdose. Standing between your garden and your neighbor's house, you've been pulled between the new life you're trying to grow and the one you left behind. What should you do?"
+          }
+      },
+    {
+      "label":  "Freeze and let others handle it.",
+      "resist_change":  10,
+      "use_change":  -10,
+      "time_advance":  317,
+      "next_scene_id":  "scene_011",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You're out back in the yard, knees in the dirt, fingers around some stubborn roots. Sweat is running down your back, but it's the good kind. Then you hear a sharp, panicked yell from the next house. 'WAKE UP! COME ON, MAN! QUICK, CALL AN AMBULANCE!' Your stomach drops. You know that panic: an overdose. Standing between your garden and your neighbor's house, you've been pulled between the new life you're trying to grow and the one you left behind. What should you do?"
+        }
+    }
+]
+},
+"scene_010c":  {
+    "title":  "An Old Friend",
+    "narration":  "You're halfway down the canned goods aisle, staring at soups like it's a life decision. You finally reach for a can, and another person reaches for the same spot. You both pull back at the same time and that's when you see his face. It takes you a second, but you recognize him: the friend from high school who got you into using, the one who quit a few years back. 'Dude, no way, is that you?' he says. 'How long's it been, you look different.' You need to decide how to play this.",
+    "choices":  [
+        {
+          "label":  "Joke it off and subtly distance yourself.",
+          "resist_change":  0,
+          "use_change":  15,
+          "time_advance":  344,
+          "next_scene_id":  "scene_011",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You're halfway down the canned goods aisle, staring at soups like it's a life decision. You finally reach for a can, and another person reaches for the same spot. You both pull back at the same time and that's when you see his face. It takes you a second, but you recognize him: the friend from high school who got you into using, the one who quit a few years back. 'Dude, no way, is that you?' he says. 'How long's it been, you look different.' You need to decide how to play this."
+            }
+        },
+      {
+        "label":  "Keep it light and surface level.",
+        "resist_change":  0,
+        "use_change":  0,
+        "time_advance":  344,
+        "next_scene_id":  "scene_011",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You're halfway down the canned goods aisle, staring at soups like it's a life decision. You finally reach for a can, and another person reaches for the same spot. You both pull back at the same time and that's when you see his face. It takes you a second, but you recognize him: the friend from high school who got you into using, the one who quit a few years back. 'Dude, no way, is that you?' he says. 'How long's it been, you look different.' You need to decide how to play this."
+          }
+      },
+    {
+      "label":  "Ask how lifeâ€™s been since he got clean.",
+      "resist_change":  15,
+      "use_change":  0,
+      "time_advance":  344,
+      "next_scene_id":  "scene_011",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You're halfway down the canned goods aisle, staring at soups like it's a life decision. You finally reach for a can, and another person reaches for the same spot. You both pull back at the same time and that's when you see his face. It takes you a second, but you recognize him: the friend from high school who got you into using, the one who quit a few years back. 'Dude, no way, is that you?' he says. 'How long's it been, you look different.' You need to decide how to play this."
+        }
+    }
+]
+},
+"scene_011":  {
+    "title":  "An Old Friend",
+    "narration":  "You've been sober for a month now, but you've been so focused on distracting yourself that you didn't even find time to distract yourself. You decide to go shopping for a nice treat, just to reward yourself. You're halfway down the pastry aisle, staring at cakes like it's a life decision. You finally reach for a box, and another goes for the same spot. 'Sorry, Iâ€”' you both pull back at the same time, and that's when you see his face. It takes you a second, but you recognize him. 'Dude, no way, is that you?' He says. 'How long's it been, you look different.'",
+    "choices":  [
+        {
+          "label":  "Joke it off and subtly distance yourself.",
+          "resist_change":  0,
+          "use_change":  15,
+          "time_advance":  24,
+          "next_scene_id":  "scene_012",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You've been sober for a month now, but you've been so focused on distracting yourself that you didn't even find time to distract yourself. You decide to go shopping for a nice treat, just to reward yourself. You're halfway down the pastry aisle, staring at cakes like it's a life decision. You finally reach for a box, and another goes for the same spot. 'Sorry, Iâ€”' you both pull back at the same time, and that's when you see his face. It takes you a second, but you recognize him. 'Dude, no way, is that you?' He says. 'How long's it been, you look different.'"
+            }
+        },
+      {
+        "label":  "Keep it light and surface level.",
+        "resist_change":  0,
+        "use_change":  0,
+        "time_advance":  24,
+        "next_scene_id":  "scene_012",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You've been sober for a month now, but you've been so focused on distracting yourself that you didn't even find time to distract yourself. You decide to go shopping for a nice treat, just to reward yourself. You're halfway down the pastry aisle, staring at cakes like it's a life decision. You finally reach for a box, and another goes for the same spot. 'Sorry, Iâ€”' you both pull back at the same time, and that's when you see his face. It takes you a second, but you recognize him. 'Dude, no way, is that you?' He says. 'How long's it been, you look different.'"
+          }
+      },
+    {
+      "label":  "Ask how lifeâ€™s been since he got clean.",
+      "resist_change":  15,
+      "use_change":  0,
+      "time_advance":  24,
+      "next_scene_id":  "scene_012",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You've been sober for a month now, but you've been so focused on distracting yourself that you didn't even find time to distract yourself. You decide to go shopping for a nice treat, just to reward yourself. You're halfway down the pastry aisle, staring at cakes like it's a life decision. You finally reach for a box, and another goes for the same spot. 'Sorry, Iâ€”' you both pull back at the same time, and that's when you see his face. It takes you a second, but you recognize him. 'Dude, no way, is that you?' He says. 'How long's it been, you look different.'"
+        }
+    }
+]
+},
+"scene_012":  {
+    "title":  "A Helping Hand",
+    "narration":  "You're admiring the work you've gotten done in your garden in the past few weeks when you get a phone call from an unfamiliar number. The voice on the other end is your old friend from the supermarket. 'Hey, I've been thinking about our discussion yesterday, and I just wanted to reach out and offer some help. I don't know what you've been struggling with, but I wanted to give you some resources that helped me.'",
+    "choices":  [
+        {
+          "label":  "No, I think I'm okay. I've gotten this far on my own.",
+          "resist_change":  -10,
+          "use_change":  0,
+          "time_advance":  168,
+          "next_scene_id":  "scene_013",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You're admiring the work you've gotten done in your garden in the past few weeks when you get a phone call from an unfamiliar number. The voice on the other end is your old friend from the supermarket. 'Hey, I've been thinking about our discussion yesterday, and I just wanted to reach out and offer some help. I don't know what you've been struggling with, but I wanted to give you some resources that helped me.'"
+            }
+        },
+      {
+        "label":  "You know what, you're right. I'll take any help you can give me.",
+        "resist_change":  15,
+        "use_change":  0,
+        "time_advance":  168,
+        "next_scene_id":  "scene_013",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You're admiring the work you've gotten done in your garden in the past few weeks when you get a phone call from an unfamiliar number. The voice on the other end is your old friend from the supermarket. 'Hey, I've been thinking about our discussion yesterday, and I just wanted to reach out and offer some help. I don't know what you've been struggling with, but I wanted to give you some resources that helped me.'"
+          }
+      },
+    {
+      "label":  "I don't know. I'll think about it.",
+      "resist_change":  0,
+      "use_change":  0,
+      "time_advance":  168,
+      "next_scene_id":  "scene_013",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You're admiring the work you've gotten done in your garden in the past few weeks when you get a phone call from an unfamiliar number. The voice on the other end is your old friend from the supermarket. 'Hey, I've been thinking about our discussion yesterday, and I just wanted to reach out and offer some help. I don't know what you've been struggling with, but I wanted to give you some resources that helped me.'"
+        }
+    }
+]
+},
+"scene_013":  {
+    "title":  "The Support Group",
+    "narration":  "Against everything you've been raised to think, you decide to reach out for help and go to the support group. Any hesitation you had drifted away at the thought of eventually being completely free of your temptation. You sit in the neat folding chairs, sweating, while the rest of the people give their introductions. It's almost your turn. How should you introduce yourself?",
+    "choices":  [
+        {
+          "label":  "Say it plainly.",
+          "resist_change":  15,
+          "use_change":  -15,
+          "time_advance":  168,
+          "next_scene_id":  "scene_014",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "Against everything you've been raised to think, you decide to reach out for help and go to the support group. Any hesitation you had drifted away at the thought of eventually being completely free of your temptation. You sit in the neat folding chairs, sweating, while the rest of the people give their introductions. It's almost your turn. How should you introduce yourself?"
+            }
+        },
+      {
+        "label":  "Be halfway honest.",
+        "resist_change":  0,
+        "use_change":  0,
+        "time_advance":  168,
+        "next_scene_id":  "scene_014",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "Against everything you've been raised to think, you decide to reach out for help and go to the support group. Any hesitation you had drifted away at the thought of eventually being completely free of your temptation. You sit in the neat folding chairs, sweating, while the rest of the people give their introductions. It's almost your turn. How should you introduce yourself?"
+          }
+      },
+    {
+      "label":  "Distance yourself.",
+      "resist_change":  -10,
+      "use_change":  0,
+      "time_advance":  168,
+      "next_scene_id":  "scene_014",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "Against everything you've been raised to think, you decide to reach out for help and go to the support group. Any hesitation you had drifted away at the thought of eventually being completely free of your temptation. You sit in the neat folding chairs, sweating, while the rest of the people give their introductions. It's almost your turn. How should you introduce yourself?"
+        }
+    }
+]
+},
+"scene_014":  {
+    "title":  "Comfortable with a New Beginning",
+    "narration":  "Despite your reluctance, your meeting last week really helped you. Being surrounded by others in the same situation made you feel recognized and confident. You now feel comfortable going back every week and discussing your problems. When the question 'Anybody want to talk about their week?' is asked, you want to say something.",
+    "choices":  [
+        {
+          "label":  "Be honest about how hard the week was.",
+          "resist_change":  15,
+          "use_change":  -15,
+          "time_advance":  168,
+          "next_scene_id":  "scene_015",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "Despite your reluctance, your meeting last week really helped you. Being surrounded by others in the same situation made you feel recognized and confident. You now feel comfortable going back every week and discussing your problems. When the question 'Anybody want to talk about their week?' is asked, you want to say something."
+            }
+        },
+      {
+        "label":  "Just say you're doing better.",
+        "resist_change":  0,
+        "use_change":  0,
+        "time_advance":  168,
+        "next_scene_id":  "scene_015",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "Despite your reluctance, your meeting last week really helped you. Being surrounded by others in the same situation made you feel recognized and confident. You now feel comfortable going back every week and discussing your problems. When the question 'Anybody want to talk about their week?' is asked, you want to say something."
+          }
+      },
+    {
+      "label":  "Freeze and stay silent.",
+      "resist_change":  -10,
+      "use_change":  0,
+      "time_advance":  168,
+      "next_scene_id":  "scene_015",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "Despite your reluctance, your meeting last week really helped you. Being surrounded by others in the same situation made you feel recognized and confident. You now feel comfortable going back every week and discussing your problems. When the question 'Anybody want to talk about their week?' is asked, you want to say something."
+        }
+    }
+]
+},
+"scene_015":  {
+    "title":  "Third Week in a Row",
+    "narration":  "You show up for the third week in a row, and this time you notice something. You no longer feel so alone, tired, or on edge. You realize this is not just because you've been nearly two months clean, but also because you're now being recognized. When the circle gets to you, you are actually excited to speak.",
+    "choices":  [
+        {
+          "label":  "Share the things that make you feel a little lighter.",
+          "resist_change":  10,
+          "use_change":  -10,
+          "time_advance":  336,
+          "next_scene_id":  "scene_016",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You show up for the third week in a row, and this time you notice something. You no longer feel so alone, tired, or on edge. You realize this is not just because you've been nearly two months clean, but also because you're now being recognized. When the circle gets to you, you are actually excited to speak."
+            }
+        },
+      {
+        "label":  "Mention a specific win.",
+        "resist_change":  10,
+        "use_change":  -10,
+        "time_advance":  336,
+        "next_scene_id":  "scene_016",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You show up for the third week in a row, and this time you notice something. You no longer feel so alone, tired, or on edge. You realize this is not just because you've been nearly two months clean, but also because you're now being recognized. When the circle gets to you, you are actually excited to speak."
+          }
+      },
+    {
+      "label":  "Downplay your accomplishments.",
+      "resist_change":  0,
+      "use_change":  0,
+      "time_advance":  336,
+      "next_scene_id":  "scene_016",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You show up for the third week in a row, and this time you notice something. You no longer feel so alone, tired, or on edge. You realize this is not just because you've been nearly two months clean, but also because you're now being recognized. When the circle gets to you, you are actually excited to speak."
+        }
+    }
+]
+},
+"scene_016":  {
+    "title":  "2 Months",
+    "narration":  "This week, you reached two months sober, and unlike last time, you actually feel like this is an accomplishment. You are asked to speak to the rest of the group about your experience so far. What should you say?",
+    "choices":  [
+        {
+          "label":  "I'm happy I don't have to do it alone.",
+          "resist_change":  0,
+          "use_change":  0,
+          "time_advance":  336,
+          "next_scene_id":  "scene_017",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "This week, you reached two months sober, and unlike last time, you actually feel like this is an accomplishment. You are asked to speak to the rest of the group about your experience so far. What should you say?"
+            }
+        },
+      {
+        "label":  "I still hate feeling vulnerable, but getting through that has helped me the most.",
+        "resist_change":  0,
+        "use_change":  0,
+        "time_advance":  336,
+        "next_scene_id":  "scene_017",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "This week, you reached two months sober, and unlike last time, you actually feel like this is an accomplishment. You are asked to speak to the rest of the group about your experience so far. What should you say?"
+          }
+      },
+    {
+      "label":  "Finding ways to distract my mind has helped me more than anything else.",
+      "resist_change":  10,
+      "use_change":  -10,
+      "time_advance":  336,
+      "next_scene_id":  "scene_017",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "This week, you reached two months sober, and unlike last time, you actually feel like this is an accomplishment. You are asked to speak to the rest of the group about your experience so far. What should you say?"
+        }
+    }
+]
+},
+"scene_017":  {
+    "title":  "A Reminder",
+    "narration":  "This week, one of the regulars looks different. He usually jokes before the meeting and plays around. Just last week he was bragging about hitting three months, but when the circle got to him, he admitted that he used last week. You sit in a mix of fear and recognition; if it could happen to him in three months, it can happen to me.",
+    "choices":  [
+        {
+          "label":  "Use it as a reason to doubt your recovery.",
+          "resist_change":  -30,
+          "use_change":  20,
+          "time_advance":  336,
+          "next_scene_id":  "scene_018",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "This week, one of the regulars looks different. He usually jokes before the meeting and plays around. Just last week he was bragging about hitting three months, but when the circle got to him, he admitted that he used last week. You sit in a mix of fear and recognition; if it could happen to him in three months, it can happen to me."
+            }
+        },
+      {
+        "label":  "Share your fear with the group.",
+        "resist_change":  10,
+        "use_change":  0,
+        "time_advance":  336,
+        "next_scene_id":  "scene_018",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "This week, one of the regulars looks different. He usually jokes before the meeting and plays around. Just last week he was bragging about hitting three months, but when the circle got to him, he admitted that he used last week. You sit in a mix of fear and recognition; if it could happen to him in three months, it can happen to me."
+          }
+      },
+    {
+      "label":  "Talk to him after the meeting.",
+      "resist_change":  20,
+      "use_change":  -10,
+      "time_advance":  336,
+      "next_scene_id":  "scene_018",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "This week, one of the regulars looks different. He usually jokes before the meeting and plays around. Just last week he was bragging about hitting three months, but when the circle got to him, he admitted that he used last week. You sit in a mix of fear and recognition; if it could happen to him in three months, it can happen to me."
+        }
+    }
+]
+},
+"scene_018":  {
+    "title":  "Halloween",
+    "narration":  "It's the night of your usual meeting, but it's also Halloween. You've never given out candy before, but this year you have a little more energy and joy, so you decided to skip the meeting. How should you spend the night?",
+    "choices":  [
+        {
+          "label":  "Really be present and enjoy it.",
+          "resist_change":  15,
+          "use_change":  -10,
+          "time_advance":  624,
+          "next_scene_id":  "scene_019",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "It's the night of your usual meeting, but it's also Halloween. You've never given out candy before, but this year you have a little more energy and joy, so you decided to skip the meeting. How should you spend the night?"
+            }
+        },
+      {
+        "label":  "Use it as an excuse to drink a little.",
+        "resist_change":  -30,
+        "use_change":  20,
+        "time_advance":  624,
+        "next_scene_id":  "scene_relapse",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "It's the night of your usual meeting, but it's also Halloween. You've never given out candy before, but this year you have a little more energy and joy, so you decided to skip the meeting. How should you spend the night?"
+          }
+      },
+    {
+      "label":  "Put out a candy bowl and hide inside.",
+      "resist_change":  -15,
+      "use_change":  0,
+      "time_advance":  624,
+      "next_scene_id":  "scene_019",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "It's the night of your usual meeting, but it's also Halloween. You've never given out candy before, but this year you have a little more energy and joy, so you decided to skip the meeting. How should you spend the night?"
+        }
+    }
+]
+},
+"scene_019":  {
+    "title":  "Thanksgiving",
+    "narration":  "Thanksgiving hits different this year. You're back at your mom's table, but you're sober, and you remember last year well enough to feel sick about it. You feel nervous more than anything. You debate telling your parents about your sober journey, but you decide against it. You got clean on your mom's birthday, and there would be no greater gift for her than to be one year sober. Just as you were thinking about her, she glances at you and says, 'You seem better this year. I've been worried about you.'",
+    "choices":  [
+        {
+          "label":  "Answer with the affirmative.",
+          "resist_change":  15,
+          "use_change":  -15,
+          "time_advance":  672,
+          "next_scene_id":  "scene_020",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "Thanksgiving hits different this year. You're back at your mom's table, but you're sober, and you remember last year well enough to feel sick about it. You feel nervous more than anything. You debate telling your parents about your sober journey, but you decide against it. You got clean on your mom's birthday, and there would be no greater gift for her than to be one year sober. Just as you were thinking about her, she glances at you and says, 'You seem better this year. I've been worried about you.'"
+            }
+        },
+      {
+        "label":  "Downplay your recovery.",
+        "resist_change":  -15,
+        "use_change":  0,
+        "time_advance":  672,
+        "next_scene_id":  "scene_020",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "Thanksgiving hits different this year. You're back at your mom's table, but you're sober, and you remember last year well enough to feel sick about it. You feel nervous more than anything. You debate telling your parents about your sober journey, but you decide against it. You got clean on your mom's birthday, and there would be no greater gift for her than to be one year sober. Just as you were thinking about her, she glances at you and says, 'You seem better this year. I've been worried about you.'"
+          }
+      },
+    {
+      "label":  "Deflect with a joke.",
+      "resist_change":  0,
+      "use_change":  15,
+      "time_advance":  672,
+      "next_scene_id":  "scene_020",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "Thanksgiving hits different this year. You're back at your mom's table, but you're sober, and you remember last year well enough to feel sick about it. You feel nervous more than anything. You debate telling your parents about your sober journey, but you decide against it. You got clean on your mom's birthday, and there would be no greater gift for her than to be one year sober. Just as you were thinking about her, she glances at you and says, 'You seem better this year. I've been worried about you.'"
+        }
+    }
+]
+},
+"scene_020":  {
+    "title":  "Christmas Eve",
+    "narration":  "It's Christmas Eve with your family, and for once, your trunk is actually full of wrapped gifts that aren't from a bargain bin. Months of not needing to refill your old supply have left you with some extra spending money. As you tape the last box before tomorrow, you realize how different this feels. However, you know everyone will question where all the money came from. What should you tell them?",
+    "choices":  [
+        {
+          "label":  "Tell them you've been working very hard to cut out different things to afford better gifts.",
+          "resist_change":  20,
+          "use_change":  -15,
+          "time_advance":  168,
+          "next_scene_id":  "scene_021",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "It's Christmas Eve with your family, and for once, your trunk is actually full of wrapped gifts that aren't from a bargain bin. Months of not needing to refill your old supply have left you with some extra spending money. As you tape the last box before tomorrow, you realize how different this feels. However, you know everyone will question where all the money came from. What should you tell them?"
+            }
+        },
+      {
+        "label":  "Let them assume it's just overtime.",
+        "resist_change":  -10,
+        "use_change":  0,
+        "time_advance":  168,
+        "next_scene_id":  "scene_021",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "It's Christmas Eve with your family, and for once, your trunk is actually full of wrapped gifts that aren't from a bargain bin. Months of not needing to refill your old supply have left you with some extra spending money. As you tape the last box before tomorrow, you realize how different this feels. However, you know everyone will question where all the money came from. What should you tell them?"
+          }
+      },
+    {
+      "label":  "Say you overspent to make up for past years.",
+      "resist_change":  0,
+      "use_change":  20,
+      "time_advance":  168,
+      "next_scene_id":  "scene_021",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "It's Christmas Eve with your family, and for once, your trunk is actually full of wrapped gifts that aren't from a bargain bin. Months of not needing to refill your old supply have left you with some extra spending money. As you tape the last box before tomorrow, you realize how different this feels. However, you know everyone will question where all the money came from. What should you tell them?"
+        }
+    }
+]
+},
+"scene_021":  {
+    "title":  "New Year's Eve",
+    "narration":  "New Year's Eve sneaks up on you, and this time it actually means something. You're sober now. The cabinet in the bathroom is empty. The patch of dirt out back is cleared and ready for spring. You've been showing up to work, the meetings, and all your family gatherings. Your life has been better than it's ever been, and you can't wait to experience the new year sober.",
+    "choices":  [
+        {
+          "label":  "Use it as an excuse to drink a little.",
+          "resist_change":  -30,
+          "use_change":  20,
+          "time_advance":  720,
+          "next_scene_id":  "scene_relapse",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "New Year's Eve sneaks up on you, and this time it actually means something. You're sober now. The cabinet in the bathroom is empty. The patch of dirt out back is cleared and ready for spring. You've been showing up to work, the meetings, and all your family gatherings. Your life has been better than it's ever been, and you can't wait to experience the new year sober."
+            }
+        },
+      {
+        "label":  "Start planning your garden for next spring.",
+        "resist_change":  20,
+        "use_change":  0,
+        "time_advance":  720,
+        "next_scene_id":  "scene_022",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "New Year's Eve sneaks up on you, and this time it actually means something. You're sober now. The cabinet in the bathroom is empty. The patch of dirt out back is cleared and ready for spring. You've been showing up to work, the meetings, and all your family gatherings. Your life has been better than it's ever been, and you can't wait to experience the new year sober."
+          }
+      },
+    {
+      "label":  "Start scrolling through old pictures to look at your progress.",
+      "resist_change":  -10,
+      "use_change":  20,
+      "time_advance":  720,
+      "next_scene_id":  "scene_022",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "New Year's Eve sneaks up on you, and this time it actually means something. You're sober now. The cabinet in the bathroom is empty. The patch of dirt out back is cleared and ready for spring. You've been showing up to work, the meetings, and all your family gatherings. Your life has been better than it's ever been, and you can't wait to experience the new year sober."
+        }
+    }
+]
+},
+"scene_022":  {
+    "title":  "An Old Number",
+    "narration":  "It's late one night after a rough day of work. As you prepare for bed, you catch a glimpse of the six-month chip you got a few weeks ago. You should feel good, and part of you does, but another part feels restless, lonely, and weirdly empty. Your phone buzzes: 'Yo, you up? Got some really good stuff. Come swing by.' It's an old contact, but you know who it is.",
+    "choices":  [
+        {
+          "label":  "Block the number.",
+          "resist_change":  30,
+          "use_change":  15,
+          "time_advance":  720,
+          "next_scene_id":  "scene_023",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "It's late one night after a rough day of work. As you prepare for bed, you catch a glimpse of the six-month chip you got a few weeks ago. You should feel good, and part of you does, but another part feels restless, lonely, and weirdly empty. Your phone buzzes: 'Yo, you up? Got some really good stuff. Come swing by.' It's an old contact, but you know who it is."
+            }
+        },
+      {
+        "label":  "Don't reply, but keep the number.",
+        "resist_change":  -15,
+        "use_change":  15,
+        "time_advance":  720,
+        "next_scene_id":  "scene_023",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "It's late one night after a rough day of work. As you prepare for bed, you catch a glimpse of the six-month chip you got a few weeks ago. You should feel good, and part of you does, but another part feels restless, lonely, and weirdly empty. Your phone buzzes: 'Yo, you up? Got some really good stuff. Come swing by.' It's an old contact, but you know who it is."
+          }
+      },
+    {
+      "label":  "Text back and say, 'On my way.'",
+      "resist_change":  -20,
+      "use_change":  30,
+      "time_advance":  1,
+      "next_scene_id":  "scene_relapse",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "It's late one night after a rough day of work. As you prepare for bed, you catch a glimpse of the six-month chip you got a few weeks ago. You should feel good, and part of you does, but another part feels restless, lonely, and weirdly empty. Your phone buzzes: 'Yo, you up? Got some really good stuff. Come swing by.' It's an old contact, but you know who it is."
+        }
+    }
+]
+},
+"scene_023":  {
+    "title":  "Early Payday",
+    "narration":  "On your break, you're in your truck scrolling your banking app, and the number isn't scary for the first time in a long time. You thought your temptations were gone, but the old voice comes back: 'You've made it this far; you deserve something.' You know you shouldn't, but you feel tempted.",
+    "choices":  [
+        {
+          "label":  "Buy some new gardening tools.",
+          "resist_change":  0,
+          "use_change":  0,
+          "time_advance":  1440,
+          "next_scene_id":  "scene_024",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "On your break, you're in your truck scrolling your banking app, and the number isn't scary for the first time in a long time. You thought your temptations were gone, but the old voice comes back: 'You've made it this far; you deserve something.' You know you shouldn't, but you feel tempted."
+            }
+        },
+      {
+        "label":  "Drive near your old spot to see if your dealer is around.",
+        "resist_change":  -20,
+        "use_change":  30,
+        "time_advance":  1,
+        "next_scene_id":  "scene_relapse",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "On your break, you're in your truck scrolling your banking app, and the number isn't scary for the first time in a long time. You thought your temptations were gone, but the old voice comes back: 'You've made it this far; you deserve something.' You know you shouldn't, but you feel tempted."
+          }
+      },
+    {
+      "label":  "Start a savings account for your future.",
+      "resist_change":  0,
+      "use_change":  0,
+      "time_advance":  1440,
+      "next_scene_id":  "scene_024",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "On your break, you're in your truck scrolling your banking app, and the number isn't scary for the first time in a long time. You thought your temptations were gone, but the old voice comes back: 'You've made it this far; you deserve something.' You know you shouldn't, but you feel tempted."
+        }
+    }
+]
+},
+"scene_024":  {
+    "title":  "People You've Hurt",
+    "narration":  "You're at the meeting, and you start discussing a new topic: people you've hurt with your addiction. At first, you can't think of anyone, then you remember an old coworker from a few years ago who you got into substance use. You haven't heard from him in a while, but you wonder where he is now. You aren't sure how to manage the guilt.",
+    "choices":  [
+        {
+          "label":  "Admit it clearly.",
+          "resist_change":  10,
+          "use_change":  -10,
+          "time_advance":  1440,
+          "next_scene_id":  "scene_025",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "You're at the meeting, and you start discussing a new topic: people you've hurt with your addiction. At first, you can't think of anyone, then you remember an old coworker from a few years ago who you got into substance use. You haven't heard from him in a while, but you wonder where he is now. You aren't sure how to manage the guilt."
+            }
+        },
+      {
+        "label":  "Minimize your role.",
+        "resist_change":  0,
+        "use_change":  10,
+        "time_advance":  1440,
+        "next_scene_id":  "scene_025",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "You're at the meeting, and you start discussing a new topic: people you've hurt with your addiction. At first, you can't think of anyone, then you remember an old coworker from a few years ago who you got into substance use. You haven't heard from him in a while, but you wonder where he is now. You aren't sure how to manage the guilt."
+          }
+      },
+    {
+      "label":  "Say nothing and deal with it quietly.",
+      "resist_change":  0,
+      "use_change":  0,
+      "time_advance":  1440,
+      "next_scene_id":  "scene_025",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "You're at the meeting, and you start discussing a new topic: people you've hurt with your addiction. At first, you can't think of anyone, then you remember an old coworker from a few years ago who you got into substance use. You haven't heard from him in a while, but you wonder where he is now. You aren't sure how to manage the guilt."
+        }
+    }
+]
+},
+"scene_025":  {
+    "title":  "Cutbacks",
+    "narration":  "It's your day off, but you see your boss is calling. You pick up and hear an uncomfortable hello. He instantly starts apologizing and talking about cutbacks. You can't quite focus on everything he's saying, but you know you don't have a job anymore. You hear an old voice in your head: 'See, this is why you used. Even when you're clean, you still lose.' How should you handle it?",
+    "choices":  [
+        {
+          "label":  "Call someone from your group for help.",
+          "resist_change":  -10,
+          "use_change":  10,
+          "time_advance":  1,
+          "next_scene_id":  "scene_026",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "It's your day off, but you see your boss is calling. You pick up and hear an uncomfortable hello. He instantly starts apologizing and talking about cutbacks. You can't quite focus on everything he's saying, but you know you don't have a job anymore. You hear an old voice in your head: 'See, this is why you used. Even when you're clean, you still lose.' How should you handle it?"
+            }
+        },
+      {
+        "label":  "Text your old dealer and ask if he's available.",
+        "resist_change":  -20,
+        "use_change":  30,
+        "time_advance":  1,
+        "next_scene_id":  "scene_relapse",
+        "resource_link":  {
+            "url":  "Student Left Blank",
+            "text":  "Student Left Blank",
+            "description":  "It's your day off, but you see your boss is calling. You pick up and hear an uncomfortable hello. He instantly starts apologizing and talking about cutbacks. You can't quite focus on everything he's saying, but you know you don't have a job anymore. You hear an old voice in your head: 'See, this is why you used. Even when you're clean, you still lose.' How should you handle it?"
+          }
+      },
+    {
+      "label":  "Go on a drive past your old spot to think.",
+      "resist_change":  -20,
+      "use_change":  30,
+      "time_advance":  1,
+      "next_scene_id":  "scene_relapse",
+      "resource_link":  {
+          "url":  "Student Left Blank",
+          "text":  "Student Left Blank",
+          "description":  "It's your day off, but you see your boss is calling. You pick up and hear an uncomfortable hello. He instantly starts apologizing and talking about cutbacks. You can't quite focus on everything he's saying, but you know you don't have a job anymore. You hear an old voice in your head: 'See, this is why you used. Even when you're clean, you still lose.' How should you handle it?"
+        }
+    }
+]
+},
+"scene_026":  {
+    "title":  "You Made It!",
+    "narration":  "It's finally here: your mom's birthday. That means it's also one year clean. Dinner is the usual chaos, but this year you're a part of it and feel present. You spend the night waiting for the perfect time that never seems to come. Eventually, you just force it out. 'Can I say something real quick?'",
+    "choices":  [
+        {
+          "label":  "Tell them everything. Don't hold anything back. Forget all your fears of being vulnerable and face it.",
+          "resist_change":  25,
+          "use_change":  -20,
+          "time_advance":  0,
+          "next_scene_id":  "scene_win",
+          "resource_link":  {
+              "url":  "Student Left Blank",
+              "text":  "Student Left Blank",
+              "description":  "It's finally here: your mom's birthday. That means it's also one year clean. Dinner is the usual chaos, but this year you're a part of it and feel present. You spend the night waiting for the perfect time that never seems to come. Eventually, you just force it out. 'Can I say something real quick?'"
+            }
+        }
+    ]
+},
+"scene_win":  {
+    "title":  "One Year Clean",
+    "narration":  "For a second, nobody says anything. Your dad blinks hard and looks away. Your mom's eyes fill instantly; she covers her mouth with her hand. One of them reaches for you first, maybe your mom, pulling you into a hug. 'We knew something was up; we just didn't know how bad. I'm so proud of you.' Your dad clears his throat. 'Took a lot of guts to admit that. I'm glad you're here, son.' You start to realize there was never anything you had to worry about; they don't think any differently of you. You've made it a whole year.",
+    "choices":  [
+      ],
+    "end":  "win"
+  },
+"scene_relapse":  {
+    "title":  "A Setback",
+    "narration":  "This is not the end of the journey, but a warning sign that the urge is stronger than you have been willing to admit. Recovery is not a single perfect moment; it is a series of decisions and the willingness to choose support again.",
+    "choices":  [
+      ],
+    "end":  "relapse"
+  }
+}
+

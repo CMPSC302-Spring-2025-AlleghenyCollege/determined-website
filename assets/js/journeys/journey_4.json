@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Relapse Prevention",
-    "description": "Build advanced skills to identify triggers and prevent relapse in challenging situations.",
+    "title": "Student Left Blank",
+    "description": "Your name is Alex, you are an African American male, and after years of struggling with addiction, you have made the daunting decision to try and abstain from your drug of choice (DoC) for a full year, with the hopes that this will lead to permanent sobriety, and the turning of a new leaf. The journey you now face is not merely a test of will power, but rather it forces you to face socioeconomic exclusion, historical criminalization, and systemic institutional bias—the 'invisible epidemiologies' that characterize drug use among marginalized communities. The core mechanics use Resistance (R), reflecting Alex's internal motivation, self-efficacy, and sobriety commitment, and Use (U), reflecting the influence of external stressors, cravings, and the allure of immediate relief.",
     "image": "../assets/images/home-image.jpg"
   },
   "initial_values": {
@@ -9,19 +9,79 @@
     "use": 50
   },
   "scene_001": {
-    "title": "Night",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+    "title": "Work Degredation",
+    "narration": "You have just recently gone abstinent from your DoC, and have established yourself in a temporary housing unit provided by a recent charitable organization. However, you have little money to your name, and rent is due next week. In searching for employment, you receive an offer from a temp agency to work a low wage, non-union job at a factory. However, in understanding that such jobs can often be rife with humiliation and degradation, you also consider raising money through stealing. You know the risk of stealing is many times higher than legal employment, but the employment in question is soul crushing and can bring great stress.",
+    "choices": [
+      {
+        "label": "Take the low-wage, degrading factory job",
+        "resist_change": 5,
+        "use_change": -5,
+        "time_advance": 720,
+        "next_scene_id": "scene_002",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
+        }
+      },
+      {
+        "label": "Refuse the Degrading job, and try stealing.",
+        "resist_change": -10,
+        "use_change": 15,
+        "time_advance": 720,
+        "next_scene_id": "scene_002",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
+        }
+      }
+    ]
+  },
+  "scene_002": {
+    "title": "Segregated Treatment",
+    "narration": "You successfully made it through the first month, and you have managed to keep a roof over your head thus far. But the cravings and withdrawal symptoms have not yet succumbed to time, and in fact, the stress you faced during month one have made the cravings all the worse. You need clinical help in order to maintain some form of stabilization. You have located a publicly funded clinic for intake, but the receptionist informs you that there is a six week wait for an initial assessment slot.",
+    "choices": [
+      {
+        "label": "Trust the process, continue to follow up with the clinic daily to look for cancelations",
+        "resist_change": 5,
+        "use_change": 0,
+        "time_advance": 720,
+        "next_scene_id": "scene_003",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Netherland et al., 2017",
+          "description": "You manage to secure a spot in the clinic without too much of a wait, but participation in this heavily monitored and restrictive system increases your social stress, which makes it more likely for you to drop out or fail out. "
+        }
+      },
+      {
+        "label": "Pay for privately funded Medication Assisted Treatment (MAT)",
+        "resist_change": -5,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_003",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Netherland et al., 2017",
+          "description": "MAT is scientifically effective, but accessing private healthcare strains your resources and pits you against a system often designed for affluent (White) clients, causing frustration."
+        }
+      }
+    ]
+  },
+  "scene_003": {
+    "title": "Fellowship",
+    "narration": "You have successfully made it 3 months sober, and despite the last month of hardships, you have not faltered. This should make you proud. Recently, you have heard about a local community center hosting regular Twelve-Step meetings. While you have heard good things about these Twelve-Step Mutual Help Groups (TSMHO’s), you find yourself wary of the traditional AA model, which can often feel alienating due to its historical focus on spiritual language.",
     "choices": [
       {
         "label": "Positive Option",
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_002a",
+        "next_scene_id": "scene_003a",
         "resource_link": {
           "url": "http://127.0.0.1:5501/pages/game.html",
-          "text": "Lorem Ipsum Resource",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
         }
       },
       {
@@ -29,14 +89,24 @@
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_002b"
+        "next_scene_id": "scene_003b",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
+        }
       },
       {
         "label": "Negative Option",
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_002c"
+        "next_scene_id": "scene_003c",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
+        }
       }
     ]
   },
@@ -49,21 +119,36 @@
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_003a"
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
+        }
       },
       {
         "label": "Neutral Option",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_003b"
+        "next_scene_id": "scene_003b",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
+        }
       },
       {
         "label": "Negative Option",
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_003c"
+        "next_scene_id": "scene_003c",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "Bourgois & Schonberg, 2009, Chapter 5",
+          "description": "You have addressed the immediate financial needs you faced, and have earned the money for next week's rent. But through the job you face humiliation and a high level of stress."
+        }
       }
     ]
   },
@@ -76,21 +161,21 @@
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_003d"
+      "next_scene_id": "scene_003a"
       },
       {
         "label": "Neutral Option",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_003e"
+      "next_scene_id": "scene_003b"
       },
       {
         "label": "Negative Option",
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_003f"
+      "next_scene_id": "scene_003c"
       }
     ]
   },
@@ -103,21 +188,21 @@
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_003g"
+      "next_scene_id": "scene_003a"
       },
       {
         "label": "Neutral Option",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_003h"
+      "next_scene_id": "scene_003b"
       },
       {
         "label": "Negative Option",
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_003i"
+      "next_scene_id": "scene_003c"
       }
     ]
   },
@@ -144,7 +229,7 @@
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_004c"
+      "next_scene_id": "scene_005c"
       }
     ]
   },
@@ -157,21 +242,21 @@
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_004d"
+      "next_scene_id": "scene_005d"
       },
       {
         "label": "Neutral Option",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_004e"
+      "next_scene_id": "scene_005e"
       },
       {
         "label": "Negative Option",
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_004f"
+      "next_scene_id": "scene_005f"
       }
     ]
   },
@@ -184,21 +269,21 @@
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_004g"
+      "next_scene_id": "scene_005d"
       },
       {
         "label": "Neutral Option: Take a break from socializing",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_004h"
+      "next_scene_id": "scene_005e"
       },
       {
         "label": "Negative Option: Avoid future social events",
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_004i"
+      "next_scene_id": "scene_005f"
       }
     ]
   },
@@ -304,4 +389,4 @@
     "end": "relapse",
     "choices": []
   }
-} 
+}

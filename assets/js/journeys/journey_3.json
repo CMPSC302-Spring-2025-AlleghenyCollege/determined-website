@@ -1,600 +1,274 @@
 {
   "metadata": {
-    "title": "Workplace Recovery",
-    "description": "Learn to manage workplace stressors while maintaining your recovery progress.",
-    "image": "../assets/images/bg-gradient-3.jpg"
+    "title": "Diane",
+    "description": "Student left blank",
+    "image": "../assets/images/bg-gradient-2.jpg"
   },
   "initial_values": {
     "resist": 50,
     "use": 50
   },
   "scene_001": {
-    "title": "Morning",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You wake up feeling slightly anxious. The journey of recovery continues today.",
+    "title": "The First Last Day",
+    "narration": "You are a woman named Diane who is addicted to crack cocaine. You have enough money for two days' rent in the day motel that you currently reside in after working your last client. Then, you receive a call you've come to expect from your patient broker. What do you do?",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
+        "label": "Answer the phone.",
+        "resist_change": 5,
+        "use_change": 0,
+        "time_advance": 0,
         "next_scene_id": "scene_002a",
         "resource_link": {
           "url": "http://127.0.0.1:5501/pages/game.html",
-          "text": "Morning Meditation",
-          "description": "Starting your day with mindfulness can help build resilience."
+          "text": "BLANK",
+          "description": "Patient brokers are paid to look for addicts or recovering addicts with good insurance that they can then recruit into treatment centers or sober homes."
         }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": 0,
+        "label": "Wait for it to go to voice mail.",
+        "resist_change": 5,
         "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_002b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 10,
-        "time_advance": 1,
-        "next_scene_id": "scene_002c"
+        "time_advance": 0,
+        "next_scene_id": "scene_002b",
+         "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "Patient brokers are paid to look for addicts or recovering addicts with good insurance that they can then recruit into treatment centers or sober homes."
+        }
       }
     ]
   },
   "scene_002a": {
-    "title": "Positive Path A",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your morning routine has set a positive tone for the day.",
+    "title": "The Phonecall",
+    "narration": "You pick up the phone and your patient broker, addressing you by name, explains that he has $3,000 dollars for you if you agree to stay in a sober home for eight days after testing positive for substance use on your insurance.",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 3,
-        "next_scene_id": "scene_003a"
-      },
-      {
-        "label": "Neutral Option",
+        "label": " He always pays what he says he will; anything is better than the work I have to do to stay where I am right now. He says my insurance will cover it? I accept this offer.",
         "resist_change": 0,
-        "use_change": 5,
-        "time_advance": 3,
-        "next_scene_id": "scene_003b"
+        "use_change": 10,
+        "time_advance": 72,
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "Patient brokers work between those with good insurance–their “client,” and the rehab facility, sober home, and/or detox center in exchange for a portion of the insurance money; a part of which is used to entice “clients” into the homes in the first place."
+        }
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 10,
-        "time_advance": 3,
-        "next_scene_id": "scene_003c"
+        "label": "Decline the offer. I can find my own help.",
+        "resist_change": 25,
+        "use_change": 0,
+        "time_advance": 24,
+        "next_scene_id": "scene_003b",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "Patient brokers work between those with good insurance–their “client,” and the rehab facility, sober home, and/or detox center in exchange for a portion of the insurance money; a part of which is used to entice “clients” into the homes in the first place."
+        }
+      },
+      {
+        "label": "I don't need help. I'm going to find a fix.",
+        "resist_change": -45,
+        "use_change": 0,
+        "time_advance": 2,
+        "next_scene_id": "scene_002c"
       }
     ]
   },
   "scene_002b": {
-    "title": "Neutral Path B",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. The day starts in a routine manner, neither especially good nor bad.",
+    "title": "The Text Message",
+    "narration": "Your patient broker sends you a text which explains that he has $3,000 dollars for you if you agree to stay in a sober home for eight days after testing positive for substance use on your insurance.",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 5,
+        "label": "He always pays what he says he will, and there's definitely still substance in my system. I accept this offer.",
+        "resist_change": 10,
         "use_change": 0,
-        "time_advance": 3,
-        "next_scene_id": "scene_003b"
+        "time_advance": 72,
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "Patient brokers work between those with good insurance–their “client,” and the rehab facility, sober home, and/or detox center in exchange for a portion of the insurance money; a part of which is used to entice “clients” into the homes in the first place."
+        }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 5,
-        "time_advance": 3,
-        "next_scene_id": "scene_003c"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 10,
-        "time_advance": 3,
-        "next_scene_id": "scene_003d"
-      }
-    ]
-  },
-  "scene_002c": {
-    "title": "Negative Path C",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. The morning begins with difficulties that test your resolve.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 5,
+        "label": "Decline the offer. I can find help on my own.",
+        "resist_change": 25,
         "use_change": 0,
-        "time_advance": 3,
-        "next_scene_id": "scene_003c"
+        "time_advance": 24,
+        "next_scene_id": "scene_003b",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "Patient brokers work between those with good insurance–their “client,” and the rehab facility, sober home, and/or detox center in exchange for a portion of the insurance money; a part of which is used to entice “clients” into the homes in the first place."
+        }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": -5,
-        "use_change": 5,
-        "time_advance": 3,
-        "next_scene_id": "scene_003d"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 15,
-        "time_advance": 3,
-        "next_scene_id": "scene_003e"
+        "label": "I don't need help. I'm going to find a fix.",
+        "resist_change": -45,
+        "use_change": 40,
+        "time_advance": 2,
+        "next_scene_id": "scene_002c",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "Patient brokers work between those with good insurance–their “client,” and the rehab facility, sober home, and/or detox center in exchange for a portion of the insurance money; a part of which is used to entice “clients” into the homes in the first place."
+        }
       }
     ]
   },
   "scene_003a": {
-    "title": "Strong Progress",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You're making significant progress in your recovery journey.",
+    "title": "In the System",
+    "narration": "After three days, your insurance has covered your illegal substance test, and your stay at the sober home and so it's time to move in!",
     "choices": [
       {
-        "label": "Positive Option",
+        "label": "I'll do my best to stay in the sober home, and stick to the program. I want to recover!",
         "resist_change": 10,
-        "use_change": -10,
-        "time_advance": 6,
-        "next_scene_id": "scene_004a"
+        "use_change": -25,
+        "time_advance": 192,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "Sticking to the program is a wise decision. If you got caught with substance, then you could lose out on the $3,000 offered to you by your insurance broker. Although, the rules are inconsistent, manipulative, and sometimes deliberately set up so that the addict will relapse."
+        }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 6,
-        "next_scene_id": "scene_004b"
+        "label": "This sober home is pretty comfortable, so I think I'll stay. Although, one of my housemates says that he got his hands on something good. I think I'll try it with him. Nobody should notice.",
+        "resist_change": -40,
+        "use_change": 20,
+        "time_advance": 72,
+        "next_scene_id": "scene_003d",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "If you got caught with substance, then you could lose out on the $3,000 offered to you by your insurance broker. Although, the rules are inconsistent, manipulative, and sometimes deliberately set up so that the addict will relapse."
+        }
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 10,
-        "time_advance": 6,
-        "next_scene_id": "scene_004c"
+        "label": "I can’t take it anymore! I have to get out of here!",
+        "resist_change": -30,
+        "use_change": 40,
+        "time_advance": 24,
+        "next_scene_id": "scene_003d",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "This decision, it seems, is up to you. Sober homes can't keep you against your will (especially without a court order), but failing to stay for the eight days means that you're very unlikely to get your $3,000. Although, the rules are inconsistent, manipulative, and sometimes deliberately set up so that the addict will relapse. Maybe getting out of the cycle: contact a broker, detox, get paid, and relapse isn't such a bad idea.."
+        }
       }
     ]
   },
   "scene_003b": {
-    "title": "Steady Path",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your recovery journey continues with small steps forward.",
+    "title": "Can one really help themself?",
+    "narration": "You're tired of being used by people who really don't care about you. You want real help.",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 6,
-        "next_scene_id": "scene_004b"
+        "label": "I've heard good things about the Salvation Army Adult Rehabilitation Centers (ARCs). I think I'll give them a call while my head is still on straight!",
+        "resist_change": 25,
+        "use_change": -20,
+        "time_advance": 24,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "ARCs are free, Christian based, non-profit, requires no insurance, and accepts anyone in any walk of life.."
+        }
       },
       {
-        "label": "Neutral Option",
+        "label": "Maybe I can do this rehab thing… soon. Just one more fix... it's been so long since my last one.",
         "resist_change": 0,
         "use_change": 0,
-        "time_advance": 6,
-        "next_scene_id": "scene_004c"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 10,
-        "time_advance": 6,
-        "next_scene_id": "scene_004d"
+        "time_advance": 1,
+        "next_scene_id": "scene_003d",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "STUDENT WROTE SOMETHING PROBLEMATIC"
+        }
       }
     ]
   },
-  "scene_003c": {
-    "title": "Challenging Moment",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You face a situation that tests your coping strategies.",
+  "scene_002c": {
+    "title": "Choosing the Familiar Pain",
+    "narration": "It’s a strange world, but you've grown familiar with enough of it to find what you're looking for. When you're in too deep, even the surface feels like a rumor",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 5,
-        "use_change": 0,
-        "time_advance": 6,
-        "next_scene_id": "scene_004c"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -5,
-        "use_change": 5,
-        "time_advance": 6,
-        "next_scene_id": "scene_004d"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 15,
-        "time_advance": 6,
-        "next_scene_id": "scene_004e"
+        "label": "Use",
+        "resist_change": -100,
+        "use_change": 100,
+        "time_advance": 1,
+        "next_scene_id": "scene_relapse",
+        "unlock_tool": "exercise",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "The first step to solving a problem is admitting that you have it. People are much more likely to stay sober if they have or seek support from people in their lives."
+        }
       }
     ]
   },
   "scene_003d": {
-    "title": "Growing Pressure",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. The urge to use is becoming stronger as stressors mount.",
+    "title": "Crossing the Rubicon",
+    "narration": "You wake up after a three day bender. You’re cold, you’re not quite sure where you are, your body aches, and the depression is beginning to set in. It’s now or never–take the rehab or play with fire until the flames play back.",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 5,
-        "use_change": -5,
-        "time_advance": 6,
-        "next_scene_id": "scene_004d"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -5,
-        "use_change": 10,
-        "time_advance": 6,
-        "next_scene_id": "scene_004e"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -15,
-        "use_change": 15,
-        "time_advance": 6,
-        "next_scene_id": "scene_004f"
-      }
-    ]
-  },
-  "scene_003e": {
-    "title": "Critical Decision Point",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You're facing a significant challenge to your recovery.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -10,
-        "time_advance": 6,
-        "next_scene_id": "scene_004e"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -5,
-        "use_change": 10,
-        "time_advance": 6,
-        "next_scene_id": "scene_004f"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -20,
-        "use_change": 20,
-        "time_advance": 6,
-        "next_scene_id": "scene_004g"
-      }
-    ]
-  },
-  "scene_004a": {
-    "title": "Recovery Success",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your consistent positive choices have led to significant progress.",
-    "choices": [
-      {
-        "label": "Complete Your Journey",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 0,
-        "next_scene_id": "scene_win"
-      }
-    ]
-  },
-  "scene_004b": {
-    "title": "Positive Momentum",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You're building momentum in your recovery.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 15,
-        "use_change": -10,
-        "time_advance": 12,
-        "next_scene_id": "scene_win"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 5,
-        "time_advance": 12,
-        "next_scene_id": "scene_005b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 10,
-        "time_advance": 12,
-        "next_scene_id": "scene_005c"
-      }
-    ]
-  },
-  "scene_004c": {
-    "title": "Balanced Progress",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your journey continues with both challenges and successes.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -10,
-        "time_advance": 12,
-        "next_scene_id": "scene_005b"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 12,
-        "next_scene_id": "scene_005c"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 15,
-        "time_advance": 12,
-        "next_scene_id": "scene_005d"
-      }
-    ]
-  },
-  "scene_004d": {
-    "title": "Wavering Resolve",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your determination is being tested by mounting pressures.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 12,
-        "next_scene_id": "scene_005c"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -5,
-        "use_change": 10,
-        "time_advance": 12,
-        "next_scene_id": "scene_005d"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -15,
-        "use_change": 15,
-        "time_advance": 12,
-        "next_scene_id": "scene_005e"
-      }
-    ]
-  },
-  "scene_004e": {
-    "title": "Increasing Struggle",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. The challenges to your recovery are growing more intense.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 15,
-        "use_change": -10,
-        "time_advance": 12,
-        "next_scene_id": "scene_005d"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -5,
-        "use_change": 10,
-        "time_advance": 12,
-        "next_scene_id": "scene_005e"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -20,
-        "use_change": 20,
-        "time_advance": 12,
-        "next_scene_id": "scene_relapse"
-      }
-    ]
-  },
-  "scene_004f": {
-    "title": "Critical Juncture",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your recovery is at a pivotal point requiring strong decisions.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 20,
-        "use_change": -15,
-        "time_advance": 12,
-        "next_scene_id": "scene_005e"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -10,
-        "use_change": 15,
-        "time_advance": 12,
-        "next_scene_id": "scene_005f"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -25,
-        "use_change": 20,
-        "time_advance": 12,
-        "next_scene_id": "scene_relapse"
-      }
-    ]
-  },
-  "scene_004g": {
-    "title": "Near Breaking Point",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your resistance is severely depleted as urges intensify.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 25,
-        "use_change": -20,
-        "time_advance": 12,
-        "next_scene_id": "scene_005f"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -10,
-        "use_change": 15,
-        "time_advance": 12,
-        "next_scene_id": "scene_relapse"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -30,
-        "use_change": 25,
-        "time_advance": 12,
-        "next_scene_id": "scene_relapse"
-      }
-    ]
-  },
-  "scene_005b": {
-    "title": "Recovery Milestone",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You've reached an important milestone in your recovery journey.",
-    "choices": [
-      {
-        "label": "Celebrate Progress",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 0,
-        "next_scene_id": "scene_win"
-      }
-    ]
-  },
-  "scene_005c": {
-    "title": "Important Decision",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A significant choice lies before you in your journey.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 20,
-        "use_change": -20,
-        "time_advance": 24,
-        "next_scene_id": "scene_win"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 24,
-        "next_scene_id": "scene_006"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -20,
-        "use_change": 20,
-        "time_advance": 24,
-        "next_scene_id": "scene_relapse"
-      }
-    ]
-  },
-  "scene_005d": {
-    "title": "Difficult Crossroads",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your recovery journey has arrived at a critical juncture.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 25,
-        "use_change": -25,
-        "time_advance": 24,
-        "next_scene_id": "scene_006"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": -10,
-        "use_change": 10,
-        "time_advance": 24,
-        "next_scene_id": "scene_007"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -30,
-        "use_change": 25,
-        "time_advance": 24,
-        "next_scene_id": "scene_relapse"
-      }
-    ]
-  },
-  "scene_005e": {
-    "title": "Final Challenge",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. This moment will define your recovery journey.",
-    "choices": [
-      {
-        "label": "Positive Option",
+        "label": "By the Doors of Heaven",
         "resist_change": 30,
         "use_change": -30,
-        "time_advance": 24,
-        "next_scene_id": "scene_win"
+        "time_advance": 72,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "One estimate is that 3 out of 4 people with a substance use disorder (SUD) will ultimately overcome them despite having fallen off the wagon on occasion."
+        }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": -10,
-        "use_change": 20,
-        "time_advance": 24,
-        "next_scene_id": "scene_007"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -40,
-        "use_change": 40,
-        "time_advance": 24,
-        "next_scene_id": "scene_relapse"
+        "label": "By the Gates of Hell.",
+        "resist_change": -25,
+        "use_change": 25,
+        "time_advance": 1,
+        "next_scene_id": "scene_002c",
+        "resource_link": {
+          "url": "http://127.0.0.1:5501/pages/game.html",
+          "text": "BLANK",
+          "description": "PYou know where the road leads; you just kept walking."
+        }
       }
     ]
   },
-  "scene_005f": {
-    "title": "Moment of Truth",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Everything in your recovery journey has led to this moment.",
+  "scene_005a": {
+    "title": "The Help You Needed",
+    "narration": "Here you are, at the door of a facility that has your best interests and can finally deliver to you the help you need. This is one of the most important decisions that you will ever make, but you have to want… no… you have to need it. Which do you choose?",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 50,
-        "use_change": -50,
-        "time_advance": 24,
+        "label": "I need it; this is my choice.",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
         "next_scene_id": "scene_win"
       },
       {
-        "label": "Neutral Option",
-        "resist_change": 0,
+        "label": "I'm sorry, it hurts too much.",
+        "resist_change": -20,
         "use_change": 0,
-        "time_advance": 24,
-        "next_scene_id": "scene_007"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -50,
-        "use_change": 50,
-        "time_advance": 24,
-        "next_scene_id": "scene_relapse"
-      }
-    ]
-  },
-  "scene_006": {
-    "title": "New Beginning",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You've overcome significant challenges and are entering a new phase.",
-    "choices": [
-      {
-        "label": "Continue Your Journey",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 0,
-        "next_scene_id": "scene_win"
-      }
-    ]
-  },
-  "scene_007": {
-    "title": "Final Decision",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. This decision will determine your path forward.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 50,
-        "use_change": -50,
-        "time_advance": 24,
-        "next_scene_id": "scene_win"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -50,
-        "use_change": 50,
-        "time_advance": 24,
+        "time_advance": 1,
         "next_scene_id": "scene_relapse"
       }
     ]
   },
   "scene_win": {
-    "title": "Recovery Success",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. You've successfully navigated this challenging journey. By making a series of positive choices and building resilience, you've maintained your recovery path. This demonstrates how recovery is built through consistent effort and positive decision-making.",
+    "title": "The Help You Needed",
+    "narration": "You choose recovery and accept the support available to you.",
     "choices": [],
     "end": "win"
   },
   "scene_relapse": {
-    "title": "Recovery Setback",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Your resistance has been worn down through a series of challenging situations and choices. This mirrors how relapse typically happens - not from a single decision, but through a pattern that gradually erodes resilience. Remember that setbacks are part of many recovery journeys, and each attempt teaches valuable lessons.",
+    "title": "Familiar Pain",
+    "narration": "One more time becomes another setback, but a setback does not erase the possibility of recovery.",
+    "toolkit": false,
     "choices": [],
     "end": "relapse"
   }
-} 
+}

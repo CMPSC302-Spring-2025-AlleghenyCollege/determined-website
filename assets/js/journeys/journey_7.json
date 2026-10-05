@@ -1,0 +1,1242 @@
+{
+  "metadata": {
+    "title": "Leo's Journey",
+    "description": "Leo's trying to sober up after learning about how his addiction to painkillers affects his athletic ability.",
+    "image": "../assets/images/bg-gradient-2.jpg"
+  },
+  "initial_values": {
+    "resist": 50,
+    "use": 50
+  },
+  "scene_001": {
+    "title": "Middle of the night",
+    "narration": "You wake up in the middle of the night in a cold sweat due to sharp stabbing pains going throughout your body.",
+    "choices": [
+      {
+        "label": "Go back to bed and lay down",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 6,
+        "next_scene_id": "scene_002a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Restful sleep helps limit the severity of the withdrawal symptoms such as sharp and stabbing pains."
+        }
+      },
+      {
+        "label": "Scroll reels",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_002b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This can act as a distraction to the withdrawal symptoms because of the dopamine going through your system."
+        }
+      },
+      {
+        "label": "Think about texting your dealer",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_002c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Thinking about talking to the dealer usually leads to communication and can lead to relapsing."
+        }
+      }
+    ]
+  },
+  "scene_002a": {
+    "title": "Morning",
+    "narration": "You are waking up to get ready for your early morning practice for football.",
+    "choices": [
+      {
+        "label": "Get up and get ready for practice",
+        "resist_change": 5,
+        "use_change": -5,
+        "time_advance": 2,
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Making the choice to get up and follow your morning schedule helps create predictability and stability which help with the recovery and sobriety journey."
+        }
+      },
+      {
+        "label": "Get up but drag yourself around",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 2,
+        "next_scene_id": "scene_003b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Nothing really changes with this."
+        }
+      },
+      {
+        "label": "Wake up but turn over to go back to sleep",
+        "resist_change": -5,
+        "use_change": 10,
+        "time_advance": 2,
+        "next_scene_id": "scene_003c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Not following a daily routine leaves you more probable to relapse."
+        }
+      }
+    ]
+  },
+  "scene_002b": {
+    "title": "Middle of the night",
+    "narration": "You look at the time and realize you have been scrolling reels for the last hour.",
+    "choices": [
+      {
+        "label": "Turn off your phone and go back to bed",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 5,
+        "next_scene_id": "scene_002a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Restful sleep helps limit the severity of the withdrawal symptoms such as sharp and stabbing pains."
+        }
+      },
+      {
+        "label": "Continue scrolling through reels",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 3,
+        "next_scene_id": "scene_004b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Losing more sleep due to the distraction of reels disrupts your circadian rhythm leading to a higher likelihood of you needing a pick me up."
+        }
+      }
+    ]
+  },
+  "scene_002c": {
+    "title": "Middle of the night",
+    "narration": "You are still up thinking about whether or not you should text your dealer.",
+    "choices": [
+      {
+        "label": "Delete the dealer out of your contacts and go back to sleep",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 5,
+        "next_scene_id": "scene_002a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Deleting your dealer's number helps get rid of that easy connection to get your fix, and sleep helps ease withdrawal symptoms."
+        }
+      },
+      {
+        "label": "Turn off your phone and sleep",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 5,
+        "next_scene_id": "scene_002a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This shows you have the will to not text your dealer, but are not strong enough yet to fully get rid of that contact."
+        }
+      },
+      {
+        "label": "Text your dealer about potentially buying",
+        "resist_change": -10,
+        "use_change": 15,
+        "time_advance": 12,
+        "next_scene_id": "scene_004c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Texting your dealer about potentially buying from them leads you down the pathway of use again because you are actively thinking about using."
+        }
+      }
+    ]
+  },
+  "scene_003a": {
+    "title": "Post Morning football practice",
+    "narration": "You just finished your best practice you have ever had even while feeling sluggish and impress Coach so much he comes up and praises you.",
+    "choices": [
+      {
+        "label": "Thank Coach for noticing and mention how you are going to be more focused and keep performing well",
+        "resist_change": 10,
+        "use_change": -10,
+        "time_advance": 8,
+        "next_scene_id": "scene_004a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "When people actively see a positive effect happening to them after they have started their sobriety journey it makes them want to keep going."
+        }
+      },
+      {
+        "label": "Talk to him about how you were feeling sluggish",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 8,
+        "next_scene_id": "scene_004a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This is a symptom of withdrawal because your body isn't used to performing without the painkillers."
+        }
+      },
+      {
+        "label": "Just think about how sluggish you felt and how you wouldn't feel that way if you had painkillers",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 8,
+        "next_scene_id": "scene_004c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Thinking about how much better you would feel with the painkillers loosens the ability to stay sober. This is a main reason a lot of people relapse."
+        }
+      }
+    ]
+  },
+  "scene_003b": {
+    "title": "Practice",
+    "narration": "You are ten minutes late to practice and Coach asks for an explanation why.",
+    "choices": [
+      {
+        "label": "Tell Coach the truth and accept the punishment",
+        "resist_change": 5,
+        "use_change": -5,
+        "time_advance": 0,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Telling the truth helps build support around you and helps grow your authentic self, which is a big part of sobriety."
+        }
+      },
+      {
+        "label": "Apologize",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 0,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Allowing yourself to be accountable is good."
+        }
+      },
+      {
+        "label": "Say it is because I am in a poor attitude",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 0,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Having a bad attitude pushes people away and causes them to be less supportive and not there for you when you need it. It can also cause people to not be lenient."
+        }
+      }
+    ]
+  },
+  "scene_003c": {
+    "title": "Missed Practice",
+    "narration": "You skipped practice and woke up to head out for school, and see that you have several missed calls from coach and teammates wondering where you are.",
+    "choices": [
+      {
+        "label": "Apologize to your coach and teammates and tell them that it won't happen again",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 8,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Keeping yourself accountable is a giant part of the journey because while others can keep you accountable the person who needs to be the best at it is you."
+        }
+      },
+      {
+        "label": "Apologize",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 0,
+        "next_scene_id": "scene_005a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You are trying to repair the damage from your absence."
+        }
+      },
+      {
+        "label": "Leave them on read",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_002c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Pushing away people that care about you isolates you."
+        }
+      }
+    ]
+  },
+  "scene_004a": {
+    "title": "After school football practice",
+    "narration": "After another good practice coach pulls you aside and tells you that you are starting in this weekend's game.",
+    "choices": [
+      {
+        "label": "Tell your parents and about getting the starting position",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 120,
+        "next_scene_id": "scene_006a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Success helps with fighting against withdrawal symptoms and gives people a point to launch off of to keep recovering."
+        }
+      },
+      {
+        "label": "Keep it to yourself for now",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 120,
+        "next_scene_id": "scene_006a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You are holding the positive news close while trying to stay grounded."
+        }
+      },
+      {
+        "label": "Start thinking about how much better you would feel if you had painkillers",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_002c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Thinking about using drugs can loosen your ability to stay sober and create a path back toward relapse."
+        }
+      }
+    ]
+  },
+  "scene_004b": {
+    "title": "Midnight",
+    "narration": "You are continuing to scroll reels until it's 6am and you have practice in an hour.",
+    "choices": [
+      {
+        "label": "Still go to practice",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 2,
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "A stable and predictable morning routine helps with recovery."
+        }
+      },
+      {
+        "label": "Sleep until school starts",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 3,
+        "next_scene_id": "scene_003b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Not following your schedule throws your entire system out of whack."
+        }
+      }
+    ]
+  },
+  "scene_004c": {
+    "title": "Middle of the night and thinking about it post am practice",
+    "narration": "You have texted your dealer about potentially buying painkillers from him and he responds.",
+    "choices": [
+      {
+        "label": "Say nevermind and go to sleep",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 4,
+        "next_scene_id": "scene_002a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Restful sleep helps limit the severity of the withdrawal symptoms such as sharp and stabbing pains. Saying no to the drug is a giant step in the right direction for sobriety."
+        }
+      },
+      {
+        "label": "Ask him what would be a good time to meet up",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 48,
+        "next_scene_id": "scene_006c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Planning on a time to buy drugs means you are almost completely relapsed."
+        }
+      }
+    ]
+  },
+  "scene_005a": {
+    "title": "Apologizing to Coach and teammates",
+    "narration": "Due to being late or missing the morning practice entirely you have decided to apologize to your coach and teammates. You are punished even though you apologized. The punishment is suicides after practice.",
+    "choices": [
+      {
+        "label": "Accept the punishment and run the suicides",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_006b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Keeping yourself accountable is a giant part of the journey because while others can keep you accountable the person who needs to be the best at it is you."
+        }
+      },
+      {
+        "label": "Scroll reels",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_006b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Avoiding the discomfort of accountability can delay your recovery."
+        }
+      }
+    ]
+  },
+  "scene_006a": {
+    "title": "Day of the game",
+    "narration": "Today is the day that you are the starting wide receiver for your team, and with that you get nervous.",
+    "choices": [
+      {
+        "label": "Calm yourself down with some meditation and realize it's good to be nervous",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 4,
+        "next_scene_id": "scene_007a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Keeping track of your mental health and especially making coping strategies to combat it is another massive jump for getting sober."
+        }
+      },
+      {
+        "label": "Start thinking about how less stressed you would be if you were high off painkillers",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_007b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Stress from outside sources causes people to relapse all the time due to them not being able to cope with the anxiety, depression, or the stress the situation is creating. Being high gets rid of that need entirely."
+        }
+      }
+    ]
+  },
+  "scene_006b": {
+    "title": "The end of running your suicides",
+    "narration": "You have just finished running your suicides due to being late or missing practice entirely this morning and your teammate comes over to help you up afterwards.",
+    "choices": [
+      {
+        "label": "Accept his help and start small talk",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_007c",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Keeping up with your inner circle and expanding your friend group allows you to have more support when you begin to or start relapsing again. They will be there to pull you out."
+        }
+      },
+      {
+        "label": "Turn him down and get up yourself",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 0,
+        "next_scene_id": "scene_008a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "By doing this you are cutting off more and more supports from your system causing there to be next to no one who wants to help when you relapse."
+        }
+      }
+    ]
+  },
+  "scene_006c": {
+    "title": "Meeting with your painkiller dealer",
+    "narration": "Before practice you head to the bathroom inside of your school to meet up with your drug dealer. Once there he greets you, and says, 'Did you bring the money?'",
+    "choices": [
+      {
+        "label": "Tell him that you are actually trying to get sober",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_008b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Voicing your want to be sober especially to your dealer can be a very big deal and is a massive step on the road to recovery."
+        }
+      },
+      {
+        "label": "Tell him you'll meet him after practice",
+        "resist_change": -5,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_008b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Continuing the conversation makes it easier to fall back into the same old pattern of use."
+        }
+      }
+    ]
+  },
+  "scene_007a": {
+    "title": "Game time",
+    "narration": "You step onto the field and focus on the game. The nerves are still there, but you feel steady enough to move forward.",
+    "choices": [
+      {
+        "label": "Play with focus and trust your training",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 4,
+        "next_scene_id": "scene_008a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Your commitment to recovery helps you stay strong under pressure."
+        }
+      },
+      {
+        "label": "Let the thought of pills creep back in",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 2,
+        "next_scene_id": "scene_008b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "A brief thought of using can become a bigger relapse risk if you are not prepared with coping tools."
+        }
+      }
+    ]
+  },
+  "scene_007b": {
+    "title": "Stress spiral",
+    "narration": "The idea of being high to calm down is becoming more tempting as the pressure builds.",
+    "choices": [
+      {
+        "label": "Take a breath and reconnect with your goal",
+        "resist_change": 5,
+        "use_change": -5,
+        "time_advance": 2,
+        "next_scene_id": "scene_008a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Returning to your recovery goals helps you handle stress without turning back to pills."
+        }
+      },
+      {
+        "label": "Text your dealer to feel better",
+        "resist_change": -10,
+        "use_change": 15,
+        "time_advance": 48,
+        "next_scene_id": "scene_008b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Giving in to the temptation can set you back quickly and deepen the cycle of use."
+        }
+      }
+    ]
+  },
+  "scene_007c": {
+    "title": "Support",
+    "narration": "Your teammate helps you up and starts a conversation. The support feels real, and it reminds you that you do not have to carry this alone.",
+    "choices": [
+      {
+        "label": "Accept the support and start talking",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_008a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Having support helps reduce feelings of isolation and keeps the path toward recovery stronger."
+        }
+      },
+      {
+        "label": "Pull away and keep your distance",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 0,
+        "next_scene_id": "scene_008b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Isolation makes it easier for cravings and old habits to take over."
+        }
+      }
+    ]
+  },
+  "scene_008a": {
+    "title": "Recovery path",
+    "narration": "You keep moving forward, choosing structure, support, and healthier habits instead of the old pattern.",
+    "choices": [],
+    "end": "success"
+  },
+  "scene_008b": {
+    "title": "Relapse risk",
+    "narration": "The thought of pills takes over, and the line between coping and using begins to blur.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_009a": {
+    "title": "After halftime of the game",
+    "narration": "After being checked by the team's athletic trainer during halftime you are cleared to continue playing. While in the third quarter the opponents defense starts ramping up, the fourth quarter you shine again with it being a tie game until you last second touchdown catch. The team rushes you to celebrate.",
+    "choices": [
+      {
+        "label": "Run towards them and tell the QB good throw",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_0010a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Your support system has grown larger, meaning more people will be there if and when you relapse. This makes it easier to look forward rather than behind."
+        }
+      },
+      {
+        "label": "Gain an ego and feel indestructible",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 168,
+        "next_scene_id": "scene_0011a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This feeling of being next to indestructible leads back down into relapsing because you think nothing can ever bring you down and nothing can stop you. This is why we see a lot of professional athletes get addicted to a variety of drugs."
+        }
+      }
+    ]
+  },
+  "scene_0010a": {
+    "title": "After the game in the locker room",
+    "narration": "While you guys are packing up your coach comes in with the game balls. He gives one to the quarterback and then starts talking about your stats, hyping you up and then giving you the second game ball. During his speech to hype you up he tells you that you're the permanent starter.",
+    "choices": [
+      {
+        "label": "Thank your coach and your teammates for being amazing and helping you get this. Say you will be more focused than ever before.",
+        "resist_change": 15,
+        "use_change": -10,
+        "time_advance": 720,
+        "next_scene_id": "scene_0011b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This gives you a clear goal and something to work harder on. This allows you to focus on something that isn’t painkillers or any of your withdrawal symptoms."
+        }
+      },
+      {
+        "label": "Be very blunt and say yeah I better be with those stats",
+        "resist_change": -5,
+        "use_change": -10,
+        "time_advance": 720,
+        "next_scene_id": "scene_0011a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Nobody likes someone who is cocky and arrogant, and this ego trip gets to people's heads. Thus making them feel like they are unstable."
+        }
+      }
+    ]
+  },
+  "scene_0010b": {
+    "title": "A month since telling your dealer",
+    "narration": "It's been a month since you told your dealer that you were trying to sober up and he has been nothing but supportive every time you have asked for help, which leaves you to ask why he still sells, and why he has helped you so much.",
+    "choices": [
+      {
+        "label": "Ask him directly why he helped you and why he still sells",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 48,
+        "next_scene_id": "scene_0012a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This can give you insight on why he started to sell and why he has been helping you so much. This allows you to gain a deeper connection with him than you originally had."
+        }
+      },
+      {
+        "label": "Wonder if he still wants to sell to you and that's why he is being so kind",
+        "resist_change": -2,
+        "use_change": 2,
+        "time_advance": 48,
+        "next_scene_id": "scene_0012b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Sometimes the recesses of our mind wonder the worst about people, making it seem like they are all after us."
+        }
+      }
+    ]
+  },
+  "scene_0011a": {
+    "title": "Being arrogant",
+    "narration": "The past couple of weeks you have been more than acting confident. You are acting arrogant. Your teammates confront you before the game about the way you have been acting and how it has impacted the team.",
+    "choices": [
+      {
+        "label": "Listen to your team and realize",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 74,
+        "next_scene_id": "scene_0013a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "By keeping yourself accountable for your emotions and the way you have been treating people you allow yourself to be more open."
+        }
+      },
+      {
+        "label": "Pretend to hear their advice and think they are just jealous",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 74,
+        "next_scene_id": "scene_0013b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "When people go through withdrawals they act more aggressively than normal. This makes it easier for them to be isolated by people who do care about them and makes it easier for them to think about your painkillers."
+        }
+      }
+    ]
+  },
+  "scene_0011b": {
+    "title": "A month after your breakout game",
+    "narration": "It's been a month since the first game of the season your team is currently 4-1, and you lost to the reigning state champions in a close game. Despite that loss your team's chemistry is at an all time high, and you are on pace to break all of your school's wide receiver records. You are asked by the local paper about who has helped you gain all of this success.",
+    "choices": [
+      {
+        "label": "Explain how it's not just you that is being successful but your teammates are helping",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 720,
+        "next_scene_id": "scene_0013a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Being successful while on your sobriety journey helps you want to stay sober. Also, not being arrogant makes people want to be friendly towards you and helps strengthen your support system."
+        }
+      },
+      {
+        "label": "Talk about how you have always had it and that you just needed a chance",
+        "resist_change": -10,
+        "use_change": 15,
+        "time_advance": 74,
+        "next_scene_id": "scene_0013b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This makes people think you are arrogant. This can also give you a god complex causing you to think you're invincible."
+        }
+      }
+    ]
+  },
+  "scene_0012a": {
+    "title": "Why your dealer still sells",
+    "narration": "You ask your old dealer why he still sells and why he helps you if he still does. He responds that it's a fast way to make money. He doesn't like the fact people are addicted to painkillers, but if they are he would much rather them buy from him rather than be laced with fentanyl.",
+    "choices": [
+      {
+        "label": "Suggest that he start working as a drug counselor",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 720,
+        "next_scene_id": "scene_0014a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Now that you understand his reason you feel a much more personal attachment, and feel a lot better talking to him."
+        }
+      },
+      {
+        "label": "Tell him that's stupid",
+        "resist_change": -12,
+        "use_change": 15,
+        "time_advance": 720,
+        "next_scene_id": "scene_0014b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Cutting away your support system makes your addiction easier to relapse into."
+        }
+      }
+    ]
+  },
+  "scene_0012b": {
+    "title": "Wondering if he will sell to you",
+    "narration": "Your dealer says he wouldn't want to be the reason you relapse and straight up says no.",
+    "choices": [
+      {
+        "label": "Understand and don't ask again",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 7200,
+      "next_scene_id": "scene_0014a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Keeping yourself accountable is a giant part of the journey because while others can keep you accountable the person who needs to be the best at it is you."
+        }
+      },
+      {
+        "label": "Get mad at him",
+        "resist_change": -20,
+        "use_change": 20,
+        "time_advance": 720,
+      "next_scene_id": "scene_0014b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Cuts the connection you need to keep your support system strong."
+        }
+      }
+    ]
+  },
+  "scene_0013a": {
+    "title": "The championship season",
+    "narration": "After listening to your teammates concerns and then giving them credit on the season you have been having the team chemistry is at an all time high and just in time. You are headed into the championship game but you are nervous.",
+    "choices": [
+      {
+        "label": "Do the mindfulness you learned",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 720,
+        "next_scene_id": "scene_0015a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Keeps you from thinking about painkillers."
+        }
+      },
+      {
+        "label": "Think about taking a painkiller for one last time",
+        "resist_change": -5,
+        "use_change": 10,
+        "time_advance": 24,
+        "next_scene_id": "scene_0015b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Thinking isn't doing, but it can lead to relapse."
+        }
+      }
+    ]
+  },
+  "scene_0013b": {
+    "title": "The championship season",
+    "narration": "Your teammates noticed while they talked to you that you were just ignoring them. This has caused them to distrust you and your quarterback to stop passing to you as frequently. Even with them not passing to you the team makes it through playoffs and it's the night before the championship game, and your team is eating together.",
+    "choices": [
+      {
+        "label": "You admit that you have been acting like a diva and bring up that you can only win this as a team. They forgive you.",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 24,
+        "next_scene_id": "scene_0015a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Admitting that you have a problem and taking accountability for your behavior greatly enhances your ability to complete your journey to sobriety."
+        }
+      },
+      {
+        "label": "You admit that you have been acting like a diva and bring up that you can only win this as a team. They don't forgive you.",
+        "resist_change": -5,
+        "use_change": 15,
+        "time_advance": 24,
+        "next_scene_id": "scene_0015b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "The feeling of rejection, especially after being vulnerable, can definitely send someone into a spiral downward causing them to relapse."
+        }
+      }
+    ]
+  },
+  "scene_0014a": {
+    "title": "3 months after your original talk with your drug dealer telling him that you want to be clean",
+    "narration": "Your dealer tells you that what you said to them last month has made him realise his purpose. He says that he has applied and been accepted into a college that specialises in drug counseling.",
+    "choices": [
+      {
+        "label": "Congratulate him and tell him you believed in him",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 720,
+      "next_scene_id": "scene_0017a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Helping others can be a form of helping yourself. Making others feel better helps people who are on their journey realise that they still matter."
+        }
+      }
+    ]
+  },
+  "scene_0014b": {
+    "title": "A month after telling your dealer that his ideology is stupid",
+    "narration": "Safe to say that you hurt his feelings pretty badly, and you guys haven't talked this entire month. You do your own research and begin to understand his ideology. You reach out to set up a time to meet up in person. Surprisingly he agrees to meet in person and talk. This is all happening during and after the football season.",
+    "choices": [
+      {
+        "label": "You admit that you shouldn't have called his ideology stupid without doing research",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 720,
+        "next_scene_id": "scene_0017a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Admitting that you have a problem and taking accountability for your behaviour greatly enhances your ability to complete your journey to sobriety."
+        }
+      },
+      {
+        "label": "You admit that you should have called his ideology stupid without proper research, but he doesn't forgive you.",
+        "resist_change": -5,
+        "use_change": 15,
+        "time_advance": 720,
+        "next_scene_id": "scene_0017b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "The feeling of rejection, especially after being vulnerable, can definitely send someone into a spiral downward causing them to relapse."
+        }
+      }
+    ]
+  },
+  "scene_0015a": {
+    "title": "The Championship Game",
+    "narration": "You and your team have won your section's championship game being the first team in 40 years to do so. You played the best game you have ever had, and broke the school record for single season receiving yards. After the game while in the locker room you are told that there will be a celebration for winning at one of the captains' houses tonight. They ask if you are coming.",
+    "choices": [
+      {
+        "label": "You tell your teammates you will be there to celebrate with them",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_0016a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Builds up morale and doesn't leave you feeling isolated."
+        }
+      },
+      {
+        "label": "You tell them no and that you have other plans. You are planning on celebrating with taking a painkiller.",
+        "resist_change": -5,
+        "use_change": 15,
+        "time_advance": 1,
+        "next_scene_id": "scene_0016b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This cuts down the likelihood people will invite you out or want to hang out with you. Also, the thought of just a celebration one time causes people to relapse more often than not."
+        }
+      }
+    ]
+  },
+  "scene_0015b": {
+    "title": "The Championship Game",
+    "narration": "Your team lost in your section's championship game. You were wide open several times and your quarterback didn't pass to you. Something that the fans in the stands yell at him about. You know you are partially to blame for the team no longer trusting you, but you are mad about them being like this in the biggest game of the season. The locker room is quiet when you walk in.",
+    "choices": [
+      {
+        "label": "Take deep breaths in front of your locker. Something that your ex-dealer taught you.",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 24,
+        "next_scene_id": "scene_0014a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Deep breaths and resetting your mental health is very important to your sobriety journey because one trigger can cause you to relapse."
+        }
+      },
+      {
+        "label": "You voice your anger with your teammates, and tell yourself a painkiller will make you happy.",
+        "resist_change": -5,
+        "use_change": 15,
+        "time_advance": 1,
+        "next_scene_id": "scene_0016b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "This cuts down the likelihood people will invite you out or want to hang out with you. Also, the thought of taking just one to make you feel better is what causes people to relapse more often than not."
+        }
+      }
+    ]
+  },
+  "scene_0016a": {
+    "title": "The celebration at your teammates house",
+    "narration": "You enter the house and it is a full blown party. There are bright party lights, loud noise, and the smell of alcohol is potent. You also know that not just the football team is here but also friends of your teammates. While you are dancing someone walks up to you and asks if you want to take an oxy with them.",
+    "choices": [
+      {
+        "label": "You tell them that you're not interested and they leave you alone",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1440,
+        "next_scene_id": "scene_0018a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Saying no to the opportunity to take the drug you were once addicted to shows extreme resilience."
+        }
+      },
+      {
+        "label": "You agree to take it",
+        "resist_change": -50,
+        "use_change": 50,
+        "time_advance": 1,
+        "next_scene_id": "scene_0018b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You plan on using the drugs."
+        }
+      }
+    ]
+  },
+  "scene_0016b": {
+    "title": "You get home after the game",
+    "narration": "You get back to your house after the game ends and hear your parents arguing. You see one of their prescriptions for painkillers out on the counter and you pour one out onto your hand and head up to your room planning on taking it, but you have second thoughts.",
+    "choices": [
+      {
+        "label": "Listen to your thoughts and get rid of it realizing that you want to go to the party instead",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 0.5,
+        "next_scene_id": "scene_0016a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Having the drug in your hands but then garbageing it isn't relapse. It's almost relapse, but you remember you are stronger than it is."
+        }
+      },
+      {
+        "label": "You go upstairs and take it",
+        "resist_change": -50,
+        "use_change": 50,
+        "time_advance": 1,
+        "next_scene_id": "scene_0018b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You plan on using the drugs."
+        }
+      }
+    ]
+  },
+  "scene_0017a": {
+    "title": "After the apology to your ex-dealer",
+    "narration": "It's been a month since you apologized and he accepted your apology. The more you talk with him the more you realize how passionate he is about helping people like you. He eventually asks you to promise never to use painkillers again because he knows you don't break your promises.",
+    "choices": [
+      {
+        "label": "You tell him you promise",
+        "resist_change": 50,
+        "use_change": -50,
+        "time_advance": 5760,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Your support system wants you to succeed and him making you promise shows that."
+        }
+      },
+      {
+        "label": "You don't promise",
+        "resist_change": -50,
+        "use_change": 50,
+        "time_advance": 1,
+        "next_scene_id": "scene_0018b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You plan on using drugs again."
+        }
+      }
+    ]
+  },
+  "scene_0017b": {
+    "title": "Falling out with the dealer",
+    "narration": "You apologize to your ex-dealer about calling his ideology stupid and he doesn't accept your apology. He tells you that you had deeply hurt him and he doesn't think he can be friends with you. A month afterwards you see him and talk real quick. He says that he heard you apologize but couldn't accept it at the time, but now he is ready.",
+    "choices": [
+      {
+        "label": "Tell him that you understand why it would take so long and that you hope you guys can still be friends",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 1440,
+        "next_scene_id": "scene_0019a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Allowing people to mess up just as you have shows grace and the ability to show grace to yourself."
+        }
+      },
+      {
+        "label": "Walk away upset",
+        "resist_change": -50,
+        "use_change": 50,
+        "time_advance": 1,
+        "next_scene_id": "scene_0019b",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You have isolated yourself."
+        }
+      }
+    ]
+  },
+  "scene_0018a": {
+    "title": "2 months after the party",
+    "narration": "2 months after turning down the oxy you are back at school and you have found that classes are a lot easier due to a better ability to focus and your body feels better. Your parents have been fighting way more often though and it's starting to get to you.",
+    "choices": [
+      {
+        "label": "You suggest family therapy and your parents agree",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 3600,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Therapy is a good way to solve mental health issues, but also helps families talk about their issues and their struggles."
+        }
+      },
+      {
+        "label": "You just go straight up stairs",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 0,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You are just isolating yourself from your family but you are also just ignoring the issues."
+        }
+      }
+    ]
+  },
+  "scene_0018b": {
+    "title": "Overdose",
+    "narration": "You took the painkiller after the party/game and it was laced. You passed away due to fentanyl poisoning.",
+    "choices": [],
+    "end": "relapse"
+  },
+  "scene_0019a": {
+    "title": "Friendship",
+    "narration": "You and your ex-dealer are now great friends and you have kept in contact with him during the summer. You are free one day after practice and ask him to hang out with you afterwards.",
+    "choices": [
+      {
+        "label": "He says yes and you guys hang out after practice",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 720,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Builds a support system outside of your football team allowing for you to feel supported and accountable."
+        }
+      },
+      {
+        "label": "He says no",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 0,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "He is just a person."
+        }
+      }
+    ]
+  },
+  "scene_0019b": {
+    "title": "Your reaction to a month without communication",
+    "narration": "You have lost a major friend that has been helping you with your sobriety journey but you continue forward with your journey.",
+    "choices": [
+      {
+        "label": "You keep pushing forward",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 3600,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "It helps that you are able to move forward with your life."
+        }
+      },
+      {
+        "label": "You feel sad",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 0,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You are a human. You are bound to get sad."
+        }
+      }
+    ]
+  },
+  "scene_0020a": {
+    "title": "1 year of sobriety",
+    "narration": "You have been sober for one entire year. YAYYYYYY!!! You have completed your challenge.",
+    "choices": [
+      {
+        "label": "You suggest family therapy and your parents agree",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 3600,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "Therapy is a good way to solve mental health issues, but also helps families talk about their issues and their struggles."
+        }
+      },
+      {
+        "label": "You just go straight up stairs",
+        "resist_change": -5,
+        "use_change": 5,
+        "time_advance": 0,
+        "next_scene_id": "scene_0020a",
+        "resource_link": {
+          "url": "Student Left Blank",
+          "text": "Student Left Blank",
+          "description": "You are just isolating yourself from your family but you are also just ignoring the issues."
+        }
+      }
+    ],
+    "end": "success"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Journey 1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "title": "Jason's Journey",
+    "description": "Jason is determined to stay sober, but that isn't always easy for a high school athlete.",
     "image": "../assets/images/bg-gradient-1.jpg"
   },
   "initial_values": {
@@ -10,228 +10,377 @@
   },
   "scene_001": {
     "title": "Morning",
-    "narration": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+    "narration": "You wake up to your alarm, irritated by its very existence.",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
+        "label": "Get out of bed",
+        "resist_change": 5,
+        "use_change": 0,
         "time_advance": 1,
         "next_scene_id": "scene_002a",
         "resource_link": {
           "url": "resources/resource_one.html",
-          "text": "Lorem Ipsum Resource",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "text": "Learn More",
+          "description": "Feeling irritable, grouchy, or upset is a common symptom of withdrawal, best not to wallow."
         }
       },
       {
-        "label": "Neutral Option",
+        "label": "Hit the Snooze Button and Go Back to Sleep",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_002b"
+        "next_scene_id": "scene_002b",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "Zzzz."
+        }
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
+        "label": "Check your Phone",
+        "resist_change": -5,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_002c"
+        "next_scene_id": "scene_002b",
+        "resource_link": {
+          "url": "resources/Social Media.html",
+          "text": "Learn More",
+          "description": "You check your phone to see pictures from a party you would've been at if you weren't so determined."
+        }
       }
     ]
   },
   "scene_002a": {
-    "title": "Breakfast",
-    "narration": "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "title": "Rise and Shine",
+    "narration": "It sucks to wake up in a bad mood, but you have some time in the morning",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
+        "label": "Take some time to eat breakfast at home",
+        "resist_change": 5,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_003a"
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "Deciding to get sober massively changes your routine, might as well include a good breakfast."
+        }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_003b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
+        "label": "Grab Breakfast as the School Cafeteria with your pals",
+        "resist_change": 5,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_003c"
+        "next_scene_id": "scene_003b",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "Getting sober isn't a solitary process and peer support is important, unfortunately sometimes peers also trigger the desire to use."
+        }
+      },
+      {
+        "label": "Don't bother eating, you're already nauseous",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 1,
+        "next_scene_id": "scene_003c",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "It can be hard to stay Determined when your basic needs aren't being met."
+        }
       }
     ]
   },
   "scene_002b": {
     "title": "Late Start",
-    "narration": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.",
+    "narration": "You're already late for school",
     "choices": [
       {
-        "label": "Positive Option",
+        "label": "Screw School, stay home",
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_003d"
+        "next_scene_id": "scene_003c",
+        "resource_link": {
+          "url": "resources/Absent",
+          "text": "Learn More",
+          "description": "Its okay to take the time you need."
+        }
       },
       {
-        "label": "Neutral Option",
+        "label": "Get up and go, quickly",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_003e"
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "resources/Attendance",
+          "text": "Learn More",
+          "description": "Better late than never."
+        }
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
+        "label": "Let your parents know and then go",
+        "resist_change": -5,
+        "use_change": -10,
         "time_advance": 1,
-        "next_scene_id": "scene_003f"
-      }
-    ]
-  },
-  "scene_002c": {
-    "title": "Morning Struggle",
-    "narration": "Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet.",
-    "choices": [
-      {
-        "label": "Positive Option",
-        "resist_change": 10,
-        "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_003g"
-      },
-      {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_003h"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_003i"
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "resources/Tardy",
+          "text": "Learn More",
+          "description": "At least now your tardy is excused."
+        }
       }
     ]
   },
   "scene_003a": {
-    "title": "Morning Activity",
-    "narration": "Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "title": "Classes",
+    "narration": "You can't seem to focus in class, you'd normally have used multiple times by now.",
     "choices": [
       {
-        "label": "Positive Option",
+        "label": "Ask a friend for some gum",
         "resist_change": 10,
         "use_change": -5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004a"
+        "time_advance": 3,
+        "next_scene_id": "scene_004a",
+        "resource_link": {
+          "url": "resources/Oral Fixation",
+          "text": "Learn More",
+          "description": "You're able to stick it out for the rest of the class, nice coping skill."
+        }
       },
       {
-        "label": "Neutral Option",
+        "label": "Just space out for a bit",
+        "resist_change": 0,
+        "use_change": 10,
+        "time_advance": 3,
+        "next_scene_id": "scene_004a",
+        "resource_link": {
+          "url": "resources/Idle Mind",
+          "text": "Learn More",
+          "description": "Having given up on paying attention, your mind wanders to your preferred source of dopamine."
+        }
+      },
+      {
+        "label": "Go to the Nurse",
         "resist_change": 0,
         "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_004b"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
-        "use_change": 5,
-        "time_advance": 1,
-        "next_scene_id": "scene_004c"
+        "time_advance": 3,
+        "next_scene_id": "scene_004a",
+        "resource_link": {
+          "url": "resources/Painkillers",
+          "text": "Learn More",
+          "description": "The nurse offers you some ibuprofen for your headache, which is a start at least."
+        }
       }
     ]
   },
   "scene_003b": {
-    "title": "Morning Reflection",
-    "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.",
+    "title": "The Cafeteria",
+    "narration": "You arrive at the cafeteria to grab breakfast, but some of your friends are already doing more than just eating breakfast.",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
+        "label": "Say hello and excuse yourself to your locker",
+        "resist_change": 5,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_004d"
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "Just because you decided to quit doesn't mean your friends did. You still love them but it can be hard to be around them right now."
+        }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
+        "label": "Sit down and hangout",
+        "resist_change": -5,
+        "use_change": 15,
         "time_advance": 1,
-        "next_scene_id": "scene_004e"
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "Hanging out with your friends reminds of what you've done with them in the past."
+        }
       },
       {
-        "label": "Negative Option",
+        "label": "Lean on the wall near them",
+        "resist_change": 10,
+        "use_change": 5,
+        "time_advance": 1,
+        "next_scene_id": "scene_003a",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "You're able to gracefully excuse yourself when the conversation veers into upsetting territory."
+        }
+      }
+    ]
+  },
+  "scene_003c": {
+    "title": "Mental Health Day?",
+    "narration": "Skipping school isn't as easy as you had hoped, your mom calls you wanting to know why you're still at home.",
+    "choices": [
+      {
+        "label": "Explain that you needed to stay home and promise to go tomorrow.",
+        "resist_change": 10,
+        "use_change": -5,
+        "time_advance": 6,
+        "next_scene_id": "scene_004b"
+      },
+      {
+        "label": "Pretend to be Sick",
+        "resist_change": -10,
+        "use_change": 30,
+        "time_advance": 1,
+        "next_scene_id": "scene_005c",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "You feel really guilty for lying, and staying at home leaves you with nothing to distract yourself with."
+        }
+      },
+      {
+        "label": "Tell her you didn't realize you slept in and head to school",
         "resist_change": -10,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_004f"
+        "next_scene_id": "scene_003a"
       }
     ]
+  },
+  "scene_006a": {
+    "title": "After Practice",
+    "narration": "After Coach's speech about staying healthy and determination, you head home.",
+    "choices": [
+      {
+        "label": "Quietly reflect on your first day sober",
+        "resist_change": 20,
+        "use_change": -5,
+        "time_advance": 1,
+        "next_scene_id": "scene_007",
+        "resource_link": {
+          "url": "resources/Reflection",
+          "text": "Learn More",
+          "description": "Reflection is a powerful tool for achieving your goals."
+        }
+      },
+      {
+        "label": "Think about how hard today was",
+        "resist_change": 0,
+        "use_change": 0,
+        "time_advance": 1,
+        "next_scene_id": "scene_007",
+        "resource_link": {
+          "url": "resources/Determination",
+          "text": "Learn More",
+          "description": "Today was hard, but you did it and you can do it again."
+        }
+      },
+      {
+        "label": "Make a plan for tomorrow.",
+        "resist_change": 5,
+        "use_change": 5,
+        "time_advance": 1,
+      "next_scene_id": "scene_007",
+        "resource_link": {
+          "url": "resources/Routines",
+          "text": "Learn More",
+          "description": "Adjusting your habits and routines can help you stay sober."
+        }
+      }
+    ]
+
   },
   "scene_004a": {
-    "title": "Morning Success",
-    "narration": "Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem.",
+    "title": "Lockerroom",
+    "narration": "While getting ready for practice, some of the others on the team are passing around a vape.",
     "choices": [
       {
-        "label": "Positive Option",
-        "resist_change": 10,
+        "label": "Get changed, quickly, and get out of there",
+        "resist_change": -10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_005a"
+        "next_scene_id": "scene_006a",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "Best to avoid tempting scenarios, although drawing attention from your peers can stress you out."
+        }
       },
       {
-        "label": "Neutral Option",
+        "label": "Say you have your own when someone offers it to you",
         "resist_change": 0,
         "use_change": 0,
         "time_advance": 1,
-        "next_scene_id": "scene_005b"
+        "next_scene_id": "scene_006a",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "You avoid being given the vape and no one thinks anything of it."
+        }
       },
       {
-        "label": "Negative Option",
-        "resist_change": -10,
+        "label": "Just do your thing, while scowling and hoping everyone leaves you alone.",
+        "resist_change": 5,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_005c"
+        "next_scene_id": "scene_006a",
+        "resource_link": {
+          "url": "resources/Withdrawl",
+          "text": "Learn More",
+          "description": "The grouchiness comes naturally to you today, making this an effective tactic."
+        }
       }
     ]
+
   },
   "scene_004b": {
-    "title": "Morning Challenge",
-    "narration": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+    "title": "Having a Chat",
+    "narration": "Your parents want to talk to you about why you stayed home from school today.",
     "choices": [
       {
-        "label": "Positive Option",
+        "label": "Tell them you didn't sleep at all last night and had a massive headache",
         "resist_change": 10,
         "use_change": -5,
         "time_advance": 1,
-        "next_scene_id": "scene_005d"
+      "next_scene_id": "scene_0010d",
+        "resource_link": {
+          "url": "resources/Withdrawal Symptoms",
+          "text": "Learn More",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
       },
       {
-        "label": "Neutral Option",
-        "resist_change": 0,
-        "use_change": 0,
-        "time_advance": 1,
-        "next_scene_id": "scene_005e"
-      },
-      {
-        "label": "Negative Option",
-        "resist_change": -10,
+        "label": "Tell them a little lie about having a project you needed to finish",
+        "resist_change": -5,
         "use_change": 5,
         "time_advance": 1,
-        "next_scene_id": "scene_005f"
+      "next_scene_id": "scene_0010e",
+        "resource_link": {
+          "url": "resources/Dishonesty",
+          "text": "Learn More",
+          "description": "They're disappointed, but you're not in serious trouble."
+        }
+      },
+      {
+        "label": "Tell them the Truth",
+        "resist_change": -10,
+        "use_change": 10,
+        "time_advance": 1,
+      "next_scene_id": "scene_0010f",
+        "resource_link": {
+          "url": "resources/Parental Support",
+          "text": "Learn More",
+          "description": "They're not as understanding as you'd hoped. You're grounded for sure."
+        }
       }
     ]
   },
-  "scene_005a": {
-    "title": "Morning Resolution",
-    "narration": "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+  "scene_007": {
+    "title": "Day One of Many",
+    "narration": "One day down, many more to go.",
     "choices": [],
     "end": "win"
   },
@@ -242,24 +391,38 @@
     "end": "win"
   },
   "scene_005c": {
-    "title": "Morning Setback",
-    "narration": "Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.",
-    "choices": [],
+    "title": "Faking Sick",
+    "narration": "You know you're going to get caught when your mom gets home.",
+    "choices": [
+
+      {
+        "label": "Hit your Vape",
+        "resist_change": -10,
+        "use_change": 20,
+        "time_advance": 1,
+      "next_scene_id": "scene_relapse",
+        "resource_link": {
+          "url": "resources/BLANK",
+          "text": "Learn More",
+          "description": "Just because you relapsed doesn't mean you aren't Determined. You can keep trying."
+        }
+      }
+    ],
     "end": "relapse"
   },
-  "scene_005d": {
+  "scene_0010d": {
     "title": "Morning Progress",
     "narration": "Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam.",
     "choices": [],
     "end": "win"
   },
-  "scene_005e": {
+  "scene_0010e": {
     "title": "Morning Routine",
     "narration": "Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti.",
     "choices": [],
     "end": "win"
   },
-  "scene_005f": {
+  "scene_0010f": {
     "title": "Morning Difficulty",
     "narration": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
     "choices": [],
@@ -277,4 +440,4 @@
     "end": "relapse",
     "choices": []
   }
-} 
+}

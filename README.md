@@ -101,8 +101,95 @@ This project is assessed on a pass/fail basis as discussed in the syllabus. To r
   - Regular contributions to individual project branch(es) (must show up on GitHub and be comparable to the rest of the team)
   - Regular creation and approval of pull requests (PRs) with at least two reviews (at least one PR per person per sprint)
   - Meaningful participation in the review sessions
-  - Completion of assigned tasks (GitHub issues) in individual branches
+- Completion of assigned tasks (GitHub issues) in individual branches
 
+## Journey Content Update — September 29, 2026
+
+This update imports the journey content supplied in `determinedjournies.zip`, integrates it with the existing game, and repairs invalid scene navigation that would otherwise leave players on blank or non-terminating screens.
+
+The detailed journey authoring and development instructions remain in [`assets/js/GAME_GUIDE.md`](assets/js/GAME_GUIDE.md).
+
+### Journey files
+
+All journey files are stored in `assets/js/journeys/`. The game discovers numbered files automatically, so no hard-coded journey cards were required.
+
+| File | Journey title | Change | Scenes |
+| --- | --- | --- | ---: |
+| `journey_1.json` | Jason's Journey | Replaced with the supplied expanded version | 17 |
+| `journey_2.json` | Around Every Corner | Replaced with the supplied expanded version | 27 |
+| `journey_3.json` | Diane | Replaced and repaired malformed ending data | 10 |
+| `journey_4.json` | Student Left Blank | Replaced with the supplied expanded version | 19 |
+| `journey_5.json` | Morning After | Replaced with the supplied expanded version | 38 |
+| `journey_6.json` | Student Left Blank | Added as a new journey | 34 |
+| `journey_7.json` | Leo's Journey | Added as a new journey | 41 |
+
+Journeys 1–5 update the website's previous content. Journeys 6–7 are new additions. Titles, descriptions, narratives, resource text, and intentional placeholders were kept as supplied unless a technical correction was required to make a route work.
+
+### Game engine changes
+
+`assets/js/game.js` now handles journey endings more defensively:
+
+- A destination scene with `"end": "relapse"` immediately opens the relapse outcome, even if the player's resistance remains above zero.
+- A destination scene with `"end": "success"` is accepted as an alias for the documented `"win"` value. This supports supplied journeys without rewriting their intended outcome.
+- A missing destination scene now displays a visible error and restart option instead of silently leaving the game on a blank screen.
+- The existing zero-resistance relapse behavior remains unchanged.
+
+### Scene-route repairs
+
+The archive contained valid JSON but several `next_scene_id` values pointed to scenes that did not exist. The following technical corrections were made.
+
+#### Journey 1
+
+- Corrected `scene_07` to `scene_007`.
+- Connected the three choices in `scene_004b` to the supplied ending scenes `scene_0010d`, `scene_0010e`, and `scene_0010f`.
+- Connected the relapse route in `scene_005c` to `scene_relapse`.
+
+#### Journey 2
+
+- Corrected `011e` to `scene_011e`.
+- Replaced two missing `scene_success` references with the supplied `scene_win` ending.
+
+#### Journey 3
+
+- Connected the incomplete positive sober-home route to `scene_005a`.
+- Connected the missing `scene_004b` route to `scene_003d`, which continues the authored relapse/recovery branch.
+- Moved the incorrectly nested relapse scene to the top level of the journey structure.
+- Added valid `scene_win` and `scene_relapse` ending scenes so both final choices resolve correctly.
+
+#### Journey 4
+
+- Redirected missing `scene_003d`–`scene_003i` references to the supplied `scene_003a`–`scene_003c` branches.
+- Redirected missing `scene_004c`–`scene_004i` references to the appropriate supplied positive, neutral, or relapse endings in `scene_005c`–`scene_005f`.
+
+#### Journey 7
+
+- Corrected the missing `scene_0024a` and `scene_24b` routes to the authored `scene_0014a` and `scene_0014b` branches.
+- Corrected the later `scene_0024a` reference to `scene_0017a`.
+
+Journeys 5 and 6 did not require scene-reference repairs.
+
+### Validation performed
+
+The completed update was checked with the following validations:
+
+- Every journey and the master toolkit parse as valid JSON.
+- Every journey contains metadata, numeric initial resistance/use values, and a `scene_001` entry point.
+- Every scene contains a title, narration, and choices array.
+- Every choice contains a label and points to an existing scene.
+- Every reachable non-ending scene has a route to a win, success, or relapse ending.
+- `assets/js/game.js` passes the Node.js JavaScript syntax check.
+- `git diff --check` reports no whitespace errors.
+- `pages/game.html` and journey endpoints 1–7 return HTTP 200 through a local web server, and every served journey response parses as JSON.
+
+### Supplied content notes
+
+Some journey content still intentionally reflects the source archive and may need a later editorial pass:
+
+- Some titles, descriptions, resource labels, and URLs contain values such as `Student Left Blank`, `BLANK`, Lorem Ipsum, local-development URLs, or placeholder resource paths.
+- The update does not invent citations, external resources, or missing student-authored narrative content.
+- The original `determinedjournies.zip` archive remains in the project root for reference.
+
+For future additions, follow the naming and schema documented in [`assets/js/GAME_GUIDE.md`](assets/js/GAME_GUIDE.md): place each file at `assets/js/journeys/journey_X.json`, keep `metadata` first, begin with `scene_001`, and ensure every `next_scene_id` names an existing scene.
 
 
 
