@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let current_results = [];
     let selected_index = -1;
 
-    // Base URL for resolving relative paths
-    // Will be set from the search.json file
+    // Base URL for resolving site-relative paths
     let base_url = '';
 
     /**
@@ -33,6 +32,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /**
+     * Get the site root from the URL of this script.
+     * This keeps search results on the same deployment, including GitHub Pages
+     * project sites whose repository name is part of the URL.
+     */
+    function getSiteBaseUrl() {
+        const search_script = Array.from(document.scripts).find(script =>
+            /\/assets\/js\/search\.js(?:[?#].*)?$/.test(script.src)
+        );
+
+        if (search_script) {
+            return new URL('../../', search_script.src).href.replace(/\/$/, '');
+        }
+
+        return window.location.origin + getRepoPath();
+    }
+
+    /**
      * Resolve a path to an absolute URL using the configured base URL
      * @param {string} path - The relative or absolute path to resolve
      * @returns {string} The fully resolved URL
@@ -43,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
             return path;
         }
 
-        // If base_url is not set, use current origin + repo path
+        // If base_url is not set, derive it from the current deployment
         if (!base_url) {
-            base_url = window.location.origin + getRepoPath();
+            base_url = getSiteBaseUrl();
         }
 
         // If it starts with a slash, append to the configured base URL
@@ -160,10 +176,9 @@ document.addEventListener('DOMContentLoaded', function () {
         search_data.length = 0; // Clear existing data
 
         try {
-            // Determine path to search.json based on current location
-            const repoPath = getRepoPath();
-            // Use relative path instead of absolute to work both locally and on GitHub Pages
-            const search_json_path = `${repoPath}/assets/js/search.json`;
+            // Always load search data from the same deployment as this script
+            base_url = getSiteBaseUrl();
+            const search_json_path = `${base_url}/assets/js/search.json`;
             
             console.log('Loading search data from:', search_json_path);
 
@@ -175,8 +190,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const sitemap_data = await response.json();
 
-            // Set the base URL from the JSON configuration
-            base_url = sitemap_data.baseUrl || (window.location.origin + repoPath);
             console.log('Using base URL:', base_url);
 
             console.log('Loaded sitemap with', sitemap_data.sitemap.length, 'pages');
@@ -219,8 +232,8 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('Search index built with', search_data.length, 'entries');
         } catch (error) {
             console.error('Error building search index:', error);
-            // Fall back to current location with repo path
-            base_url = window.location.origin + getRepoPath();
+            // Fall back to the current deployment
+            base_url = getSiteBaseUrl();
             
             // Fall back to minimal search data for basic navigation
             const pages = [

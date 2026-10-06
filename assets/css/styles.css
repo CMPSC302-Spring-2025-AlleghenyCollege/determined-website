@@ -2473,12 +2473,19 @@ body.dark-mode #acknowledge-tool-unlock {
     }
 
     .logo {
-        flex: 1;
+        flex: 0 0 auto;
         align-items: center;
+        order: 1;
     }
 
     .nav-links {
-        visibility: hidden;
+        position: static;
+        transform: none;
+        visibility: visible;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0.25rem;
+        order: 2;
     }
 
     .toggle-container {
@@ -2489,6 +2496,7 @@ body.dark-mode #acknowledge-tool-unlock {
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
+        order: 3;
     }
     
     .hero-content h1 {
@@ -2529,7 +2537,12 @@ body.dark-mode #acknowledge-tool-unlock {
     }
   
     .nav-links {
-      visibility: hidden;
+      position: static;
+      transform: none;
+      visibility: visible;
+      flex-wrap: wrap;
+      width: 100%;
+      order: 3;
     }
   
     .hero-content h1 {
